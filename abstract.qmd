@@ -1,0 +1,9 @@
+---
+title: "abstract"
+format: html
+editor: visual
+---
+
+Namen:
+
+Mino
