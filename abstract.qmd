@@ -1,15 +1,31 @@
 ---
 title: "abstract"
-format: html
-editor: visual
+format:
+  pdf:
+    papersize: a4
+    fontsize: 12pt
+    number-sections: true
+  html:
+    fontsize: 12pt
+    number-sections: true
+author: "Marleen Fox, Carys Artemis Lamm, Lara Senger, Luisa von Rhein, Mino Wittemann"
+date: now 
+date format: "dd MM yyyy"
+
+**GitHub Repository:** 
+https://github.com/MissDoctrix/Statistik-A2.git  
+**Für die Abgabe aktueller GitHub Hash:** 
+SOME_HASH
 ---
 
-Mino
+## Einleitung
 
-Lara
+## Literaturübersicht
 
-Luisa
+## Methode
 
-Carys
+## Ergebnisse
 
-Marleen
+## Diskussion
+
+## Code of Conduct {unnumbered}
