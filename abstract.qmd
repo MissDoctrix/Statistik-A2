@@ -11,12 +11,10 @@ format:
 author: "Marleen Fox, Carys Artemis Lamm, Lara Senger, Luisa von Rhein, Mino Wittemann"
 date: now 
 date format: "dd MM yyyy"
-
-**GitHub Repository:** 
-https://github.com/MissDoctrix/Statistik-A2.git  
-**Für die Abgabe aktueller GitHub Hash:** 
-SOME_HASH
 ---
+
+**GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
+**Für die Abgabe aktueller GitHub Hash:** b17319b0b72deff47225ab136cb72d25ec1b5a3b
 
 ## Einleitung
 
