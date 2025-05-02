@@ -8,7 +8,8 @@ format:
   html:
     fontsize: 12pt
     number-sections: true
-cls: 
+bibliography: literatur.bib
+csl: apa7.csl
 author: "Marleen Fox, Carys Artemis Lamm, Lara Senger, Luisa von Rhein, Mino Wittemann"
 date: today
 date-format: "D. MMMM YYYY"
