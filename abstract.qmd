@@ -8,9 +8,10 @@ format:
   html:
     fontsize: 12pt
     number-sections: true
+cls: 
 author: "Marleen Fox, Carys Artemis Lamm, Lara Senger, Luisa von Rhein, Mino Wittemann"
-date: now 
-date format: "dd MM yyyy"
+date: today
+date-format: "D. MMMM YYYY"
 ---
 
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
