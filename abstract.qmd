@@ -1,5 +1,8 @@
 ---
 title: "abstract"
+author: "Marleen Fox, Carys Artemis Lamm, Lara Senger, Luisa von Rhein, Mino Wittemann"
+date: today
+date-format: "D. MMMM YYYY"
 format:
   pdf:
     papersize: a4
@@ -10,9 +13,6 @@ format:
     number-sections: true
 bibliography: literatur.bib
 csl: apa7.csl
-author: "Marleen Fox, Carys Artemis Lamm, Lara Senger, Luisa von Rhein, Mino Wittemann"
-date: today
-date-format: "D. MMMM YYYY"
 ---
 
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
@@ -22,7 +22,15 @@ date-format: "D. MMMM YYYY"
 
 ## Literaturübersicht
 
-Text [@amri_afcc_2024].
+Es stehen zwei Fragen im Fokus der Literaturrecherche: Erstens, was sind Nutzendenanforderungen an KI als Werkzeug zur Unterstützung bei der Detektion von Misinformation auf Social Media? Zweitens, wie gehen Personen in diesem Kontext mit unterschiedlichen Feedback-Arten um?
+
+Einen ersten Einblick in den wisschenschaftlichen Forschungsstand und in die Thematik bieten @szczepanski_new_2021. Ihre Arbeit präsentiert eine Erklärungsmethode, mit der deep learning Fake‑News-Modelle nachvollziehbarer werden, indem es die Textstellen hervorhebt, die das Urteil am stärksten beeinflussen. Diese Untersuchung bietet dabei einen Ansatz für die Frage, wie die Ausgabe von KI Werkzeuge gestaltet werden kann, allerdings beinhaltet die Arbeit keine Untersuchung mit verschiedenen Nutzergruppen und ihrem Feedback.
+
+Ähnlichen Einblick bietet @reis_explainable_2019, deren Arbeit ebenfalls die Erklärbarkeit von KI Modellen zur Fake-News-Detektion fokussiert. Durch Verwendung unterschiedlichen Daten versucht das Modell eine ganzheitliche Bewertung zu erreichen und diese nachvollziehbar für Nutzende zu machen, indem das System hervorhebt, welche Merkmale am meisten zu einer Entscheidung betragen. Allerdings liegt auch hier keine direkte Nutzerforschung vor, die Bedürfnisse der Nutzenden werden angenommen ohne empirische Tests.
+
+Eine andere Arbeit von @shu_defend_2019 evaluiert in einer Nutzendenstudie, wie gut Erklärungen und Kommentare bezüglich der Entscheidung einer KI, was ob Nachrichteninhalte Fake News sind, verstanden werden. Dies sind wichtige Orientierungspunkte für die Forschungsfragen. Jedoch untersucht die Arbeit nicht weitergehend, wie unterschiedliche Feedbackformen von den Nutzenden bewertet werden und wie sehr ihnen Vertrauen entgegen gebracht wird.
+
+Die drei genannten Forschungsarbeiten bieten einen ersten Ansatz, sich mit dem Themenfeld vertraut zu machen. Jedoch müssen mehr wissenschaftliche Veröffentlichungen mit dem Schwerpunkt auf Wahrnehmung und Beurteilung unterschiedlicher Feedbacksysteme durch die Nutzenden herangezogen werden, die zudem den Fokus aus Nutzendentests legen und diese Untersuchungen vergleichen. Ebenso sind mehr Arbeiten zu suchen, die empirisch untersuchen, welche Anforderungen durch die Nutzenden gestellt werden und ob sich diese in bestehenden Modellen bereits wiederfinden.
 
 ## Methode
 
