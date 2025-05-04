@@ -22,10 +22,22 @@ date-format: "D. MMMM YYYY"
 
 ## Literaturübersicht
 
+Text [@amri_afcc_2024].
+
 ## Methode
 
 ## Ergebnisse
 
 ## Diskussion
 
-## Code of Conduct {unnumbered}
+## Code of Conduct {-}
+
+Als Arbeitsgruppe verpflichten wir uns einem gemeinsamen Verhaltenskodex, der den Anforderungen wisschenschaftlicher Forschung und respektvollen Umgang entspricht. Dieser bildet die Grundlage für die Zusammenarbeit und beinhaltet folgende Punkte:
+
+Wir begegenen einander offen und respektvoll. Konstruktives Feedback wird wertgeschätzend geäußert, aufgenommen und besprochen. Dabei sind unterschiedliche Perspektiven und Meinungen willkommen und werden als zur Zusammenarbeit gehörend betrachtet. Entsprechend wird sich im Konfliktfall gemeinsam bemüht wird, eine zufriedenstellende Lösung zu finden. Die Mitglieder werden als gleichberechtig angesehen und behandelt.
+
+Es wird eine ausgewogene Aufteilung der Arbeitslast angestrebt, die die Stärken und Schwächen der einzelnen Mitgleider berücksichtigt. Folglich verpflichten wir uns zu einer offenen und direkten Kommunikation. Im Falle möglicher Verzögerungen, Probleme oder unerwarteter Auslastungen wird frühzeitig kommuniziert und sich gegenseitig unterstützt.
+
+Wir verpflichten uns der Einhaltung wissenschaftlicher Standards, mit besonderer Umsicht gegenüber erhobener, personenbezogener Daten und der Wahrung ihrer Vertraulichkeit. Ebenso wird streng auf sorgfältigen Recherche und korrekte Zitation geachtet. Die verantwortungsvolle Nutzung von AI Tools erfolgt transparent mit Beschreibung und Kennzeichnung der Nutzung.
+
+## Literaturverzeichnis {-}
