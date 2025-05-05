@@ -16,7 +16,7 @@ csl: apa7.csl
 ---
 
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
-**Für die Abgabe aktueller GitHub Hash:** b17319b0b72deff47225ab136cb72d25ec1b5a3b
+**Für die Abgabe aktueller GitHub Hash:** 0fcc57423e742d9aa3c6905e68590509c76634f9
 
 ## Einleitung
 
@@ -24,7 +24,9 @@ csl: apa7.csl
 
 Es stehen zwei Fragen im Fokus der Literaturrecherche: Erstens, was sind Nutzendenanforderungen an KI als Werkzeug zur Unterstützung bei der Detektion von Misinformation auf Social Media? Zweitens, wie gehen Personen in diesem Kontext mit unterschiedlichen Feedback-Arten um?
 
-Einen ersten Einblick in den wisschenschaftlichen Forschungsstand und in die Thematik bieten @szczepanski_new_2021. Ihre Arbeit präsentiert eine Erklärungsmethode, mit der deep learning Fake‑News-Modelle nachvollziehbarer werden, indem es die Textstellen hervorhebt, die das Urteil am stärksten beeinflussen. Diese Untersuchung bietet dabei einen Ansatz für die Frage, wie die Ausgabe von KI Werkzeuge gestaltet werden kann, allerdings beinhaltet die Arbeit keine Untersuchung mit verschiedenen Nutzergruppen und ihrem Feedback.
+Bei der folgenden Betrachtung wurde @openai2025chatgpt genutzt, um die Formulierungen zu präzisieren und die Rechtschreibung zu kontrollieren.
+
+Einen ersten Einblick in den wissenschaftlichen Forschungsstand und in die Thematik bieten @szczepanski_new_2021. Ihre Arbeit präsentiert eine Erklärungsmethode, mit der deep learning Fake‑News-Modelle nachvollziehbarer werden, indem es die Textstellen hervorhebt, die das Urteil am stärksten beeinflussen. Diese Untersuchung bietet dabei einen Ansatz für die Frage, wie die Ausgabe von KI Werkzeuge gestaltet werden kann, allerdings beinhaltet die Arbeit keine Untersuchung mit verschiedenen Nutzergruppen und ihrem Feedback.
 
 Ähnlichen Einblick bietet @reis_explainable_2019, deren Arbeit ebenfalls die Erklärbarkeit von KI Modellen zur Fake-News-Detektion fokussiert. Durch Verwendung unterschiedlichen Daten versucht das Modell eine ganzheitliche Bewertung zu erreichen und diese nachvollziehbar für Nutzende zu machen, indem das System hervorhebt, welche Merkmale am meisten zu einer Entscheidung betragen. Allerdings liegt auch hier keine direkte Nutzerforschung vor, die Bedürfnisse der Nutzenden werden angenommen ohne empirische Tests.
 
