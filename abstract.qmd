@@ -1,6 +1,15 @@
 ---
 title: "abstract"
-author: "Marleen Fox, Carys Artemis Lamm, Lara Senger, Luisa von Rhein, Mino Wittemann"
+author:
+  - name: "Marleen Fox"
+    linebreak: true
+  - name: "Carys Artemis Lamm"
+    linebreak: true
+  - name: "Lara Senger"
+    linebreak: true
+  - name: "Luisa von Rhein"
+    linebreak: true
+  - name: "Mino Wittemann"
 date: today
 date-format: "D. MMMM YYYY"
 format:
@@ -16,7 +25,7 @@ csl: apa7.csl
 ---
 
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
-**Für die Abgabe aktueller GitHub Hash:** 0fcc57423e742d9aa3c6905e68590509c76634f9
+**Für die Abgabe aktueller GitHub Hash:** ca91be91c5fab870ef3a2a7173053eab8ace8914
 
 ## Einleitung
 
