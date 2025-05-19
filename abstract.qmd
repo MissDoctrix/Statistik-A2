@@ -1,15 +1,11 @@
 ---
 title: "abstract"
 author:
-  - name: "Marleen Fox"
-    linebreak: true
-  - name: "Carys Artemis Lamm"
-    linebreak: true
-  - name: "Lara Senger"
-    linebreak: true
-  - name: "Luisa von Rhein"
-    linebreak: true
-  - name: "Mino Wittemann"
+  - "Marleen Fox"
+  - "Carys Artemis Lamm"
+  - "Lara Senger"
+  - "Luisa von Rhein"
+  - "Mino Wittemann"
 date: today
 date-format: "D. MMMM YYYY"
 format:
@@ -25,7 +21,7 @@ csl: apa7.csl
 ---
 
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
-**Für die Abgabe aktueller GitHub Hash:** ca91be91c5fab870ef3a2a7173053eab8ace8914
+**Für die Abgabe aktueller GitHub Hash:** b5fd0e2ce7a263133021c16fa0c8c2c1270d65d0
 
 ## Einleitung
 
@@ -45,11 +41,31 @@ Die drei genannten Forschungsarbeiten bieten einen ersten Ansatz, sich mit dem T
 
 ## Methode
 
+### Qualitative Methode
+
+Um sich der Frage anzunähern, welche Anforderungen Nutzende an eine KI-Anwendung zur Unterstützung bei der Erkennung von Misinformation auf Social Media stellen, haben wir die qualitative Forschungsmethode des Interviews gewählt. Personeninterviews bieten die Möglichkeit, von den Nutzenden ausgehende Themen herauszuarbeiten und diese in weiteren Schritten näher zu untersuchen. Durch offen gestellte Fragen können Befragte eigene Gedanken einbringen und für sie wichtige Themen benennen, welche bei vorgegebenen Fragen nicht erfasst werden können. Statt die Themen der Nutzenden anzunehmen, werden diese durch die Interviews erfasst und im Folgenden genutzt, um sich der Forschungsfrage anzunähern.
+
+Wir haben für die Stichprobe junge Erwachsene aus unserem näheren Umfeld gesucht, welche sociale Medien nutzen und bereits mit künstlicher Intelligenz in Berührung gekommen sind. In Form eines Leitfaden-Interviews haben wir die Personen zu ihren Vorerfahrungen, zu ihrem social media Konsum und zu ihrer Einstellung, welche Eigenschaften eine KI-Anwendung haben sollte, die den User über detektierte Misinformation informiert. Die Interviews würde über eine Handy-Applikation lokal auf dem Gerät aufgezeichnet. Die Transkripte wurden von einer ersten Person mit Unterstützung des Transkribtionsprogrammes @whispertranscribe2025 niedergeschrieben und von einer zweiten Person korrigiert und formatiert.
+
+Zur Analyse würde die thematische Analyse in sechs Phasen genutzt. Dabei wurde im Programm Excel der @microsoft_excel_2024 eine Tabelle angelegt, um
+
 ## Ergebnisse
+
+| Name | Definition | Textstelle |
+|:-----------------------|:-----------------------|:-----------------------|
+| Barrierefreiheit | Die Barrierefreiheit beschreibt den Anspruch, dass die Gestaltung der Detektion allen Menschen eine gleichberechtigte und selbstständige Nutzung ermöglicht, unabhängig von individuellen Einschränkungen. | „Also, es muss auf jeden Fall einfach zu bedienen sein \[…\]“ (TN_1, Zeile 75). |
+| Verfügbarkeit | Unter dem Kriterium der Verfügbarkeit wird verstanden, dass die KI-Anwendung allen Nutzer\*innen jederzeit und unter gleichen Bedingungen zugänglich ist. | „Also, es muss auf jeden Fall \[…\] für jeden gleich verfügbar sein“ (TN_1, Zeile 75). |
+| erfassbare Aufbereitung | Die erfassbare Aufbereitung beschreibt den Anspruch, Informationen visuell so zu gestalten, dass sie schnell, klar und inhaltlich korrekt wahrgenommen und verstanden werden können. | „Und genau, mit einfach kommt natürlich auch sprachlich, dass man es versteht und hatte ich gesagt, dass es schnell sein soll, also dass man sehr schnell versteht, was das Ergebnis von der KI ist. Also wenn das jetzt das einschätzt, dass es praktisch am Anfang direkt einmal sagt, das ist richtig, oder das ist falsch, \[...\]“ (TN_1, Zeile 83 - 86). |
+| Einsehbarkeit der Quellen | Die Einsehbarkeit der Quellen beschreibt den Anspruch, dass alle verwendeten Informationsquellen klar benannt, zugänglich und auf ihre Richtigkeit überprüfbar sind. | „Das Einzige, was ich vielleicht finde, ist, dass man die Anforderungen an Quellen oder so was noch hinzufügen könnte, dass man halt sagt, ja, woher hast du das oder wie bist du darauf gekommen?“ (TN_1, Zeile 123 - 125) |
+| Beständigkeit der Detektionsergebnisse | Unter Beständigkeit der Detektionsergebnisse wird verstanden, dass die Ergebnisse der Misinformations-Detektion konsistent und unabhängig von der Interaktion mit dem User bleiben. | „Und deswegen finde ich es glaube ich eigentlich besser, wenn man wirklich nur die Einschätzung an sich hat, die dann halt feststeht. Und nicht so, weil, also ich habe das Gefühl, dass man sonst mit der KI ins Diskutieren kommt“ (TN_1, Zeile 120 - 122). |
+| personenunabhängige Detektion | Die personenunabhängige Detektion beschreibt den Anspruch, dass die Erkennung von Desinformation ohne Einbezug personenbezogene Daten erfolgt. | „Naja, es dürfte halt nicht auf die Leute zugeschnitten sein im Idealfall \[…\]“ (TN_2, Zeile 56). |
+| politischen Unabhängigkeit des KI-Tools | Unter politischer Unabhängigkeit wird der Anspruch verstanden, dass die Detektionsanwendung frei von parteipolitischen Einflüssen agiert und ausschließlich auf Grundlage neutraler, objektiver Kriterien Inhalte auf Desinformation prüft und bewertet. | „Es müsste halt sehr unabhängig programmiert sein, dass keine Lobbys oder so damit entwickeln, die halt vielleicht extra falsche Formationen verstreuen wollen“ (TN_2, Zeile 57 - 59). |
+
+: Analyseergebnisse der Interviews {#tbl-analyse}
 
 ## Diskussion
 
-## Code of Conduct {-}
+## Code of Conduct {.unnumbered}
 
 Als Arbeitsgruppe verpflichten wir uns einem gemeinsamen Verhaltenskodex, der den Anforderungen wisschenschaftlicher Forschung und respektvollen Umgang entspricht. Dieser bildet die Grundlage für die Zusammenarbeit und beinhaltet folgende Punkte:
 
@@ -59,4 +75,4 @@ Es wird eine ausgewogene Aufteilung der Arbeitslast angestrebt, die die Stärken
 
 Wir verpflichten uns der Einhaltung wissenschaftlicher Standards, mit besonderer Umsicht gegenüber erhobener, personenbezogener Daten und der Wahrung ihrer Vertraulichkeit. Ebenso wird streng auf sorgfältigen Recherche und korrekte Zitation geachtet. Die verantwortungsvolle Nutzung von AI Tools erfolgt transparent mit Beschreibung und Kennzeichnung der Nutzung.
 
-## Literaturverzeichnis {-}
+## Literaturverzeichnis {.unnumbered}
