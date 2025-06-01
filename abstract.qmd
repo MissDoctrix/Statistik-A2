@@ -51,9 +51,15 @@ Die Auswertung erfolgte anhand der sechsstufigen thematischen Analyse. Zur Struk
 
 ### Quantitative Methode
 
+Die quantitative Befragung wurde im Zeitraum vom Samstag, 24. Mai 2025, bis zum Montag, 2. Juni 2025 durchgeführt. Die Rekrutierung der Teilnehmenden erfolgte sowohl mündlich im persönlichen Umfeld als auch durch die Verbreitung mittels eines Rekrutierungstextes. Die Befragung wurde von den Teilnehmeden eigenständig online bearbeitet.
+
+Die Studie folgte einem Mixed-Design, bestehend aus einem between-subjects- sowie einem within-subjects-Anteil. Alle Teilnehmenden führten zunächst eine Bewertung von Social Media Posts ohne Unterstützung durch KI durch (within-subjects-Design), gefolgt von einer Bewertung mit KI-Unterstützung. Die Teilnehmenden wurden randomisiert einer von zwei Varianten eines KI-Systems zugewiesen (between-subjects-Design). Die eine Häfte bewertete eine evaluierende, die andere eine empfehlende KI-Variante.
+
+------------------------------------------------------------------------
+
 ![Ablauf der quantitativen Studie](Diagram1.png){#fig-ablauf-studie width="100%"}
 
-Wie in der Abbildung @fig-ablauf-studie zu sehen...
+Die Datenerhebung bestand aus mehreren strukturierten Abschnitten, wie in @fig-ablauf-studie vollständig dargestellt. Zu Beginn wurde ein Pre-Test-Fragebogen eingesetzt, um demografische Angaben, Bildungsgrad, interaktionsbezogene Technikaffinität, Social Media Nutzung sowie KI-Vorerfahrung zu erfassen. Im Anschluss bewerteten die Teilnehmenden mehrere Social-Media-Posts, zunächst ohne und dann mit KI-Unterstützung. Nach den Anwendungen folgte ein Fragebogen, in dem die Belastung während der Anwendungen abgefragt wurde Zuletzt wurde ein Fragebogen durchgeführt, der sich spezifisch auf die Wahrnehmung und Bewertung der jeweils eingesetzten KI-Variante bezog.
 
 ## Ergebnisse
 
@@ -92,3 +98,31 @@ Es wird eine ausgewogene Aufteilung der Arbeitslast angestrebt, die die Stärken
 Wir verpflichten uns der Einhaltung wissenschaftlicher Standards, mit besonderer Umsicht gegenüber erhobener, personenbezogener Daten und der Wahrung ihrer Vertraulichkeit. Ebenso wird streng auf sorgfältigen Recherche und korrekte Zitation geachtet. Die verantwortungsvolle Nutzung von AI Tools erfolgt transparent mit Beschreibung und Kennzeichnung der Nutzung. So wurde @openai2025chatgpt genutzt, um die Formulierungen zu präzisieren und die Rechtschreibung zu kontrollieren.
 
 ## Literaturverzeichnis {.unnumbered}
+
+## Anhang 1 - Rekrutierungstext {.unnumbered}
+
+**Online-Studie zur Erkennung von Falschinformationen – Teilnehmende gesucht!**
+
+Wir führen im Rahmen eines Forschungsmoduls eine **Online-Umfrage** durch (Dauer: ca. **60 Minuten**). In der Studie wird untersuchen, wie verschiedene KI-gestützte Systeme Menschen dabei unterstützen können, Falschinformationen zu erkennen.
+
+G**esucht werden Teilnehmende, die...**
+
+\- mindestens **18 Jahre alt** sind,
+
+\- **nicht** an der Veranstaltung **SMNF** teilnehmen,
+
+\- **Social Media zumindest gelegentlich nutzen**,
+
+\- **Deutsch** sprechen und verstehen,
+
+\- Zugriff auf ein **Tablet, Laptop oder PC** haben,
+
+\- einen **modernen Browser** nutzen (z.B. Chrome, Firefox oder Safari).
+
+**Wichtig:** Alle erhobenen Daten sind **vollständig anonym** und **nicht auf Sie rückführbar**.
+
+Interesse? Hier geht's direkt zur Studie:
+
+https://dsslab.hciuse.sh/study/pilot?groupId=gr-a2
+
+Danke für Ihre Unterstützung!
