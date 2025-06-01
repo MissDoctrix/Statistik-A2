@@ -21,7 +21,7 @@ csl: apa7.csl
 ---
 
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
-**Für die Abgabe aktueller GitHub Hash:** b5fd0e2ce7a263133021c16fa0c8c2c1270d65d0
+**Für die Abgabe aktueller GitHub Hash:** 32c69871b5bfda39ec5d7929441cb13bccb6e685
 
 ## Einleitung
 
@@ -49,6 +49,12 @@ Für die Stichprobe wurden gezielt junge Erwachsene ausgewählt, die regelmäßi
 
 Die Auswertung erfolgte anhand der sechsstufigen thematischen Analyse. Zur Strukturierung wurde im Programm Excel von @microsoft_excel_2024 eine Tabelle angelegt, in der Codes thematisch geordnet, zu Kategorien zusammengeführt und mit exemplarischen Zitaten aus den Interviews verknüpft wurden. Die Tabelle diente zugleich als Arbeitsgrundlage zur Überprüfung, Anpassung und finalen Formulierung der Themen und Definitionen. In mehreren Korrekturschleifen wurden diese überarbeitet und zu einem gemeinsamen Analyseergebnis verdichtet.
 
+### Quantitative Methode
+
+![Ablauf der quantitativen Studie](Diagram1.png){#fig-ablauf-studie width="100%"}
+
+Wie in der Abbildung @fig-ablauf-studie zu sehen...
+
 ## Ergebnisse
 
 ### Qualitative Ergebnisse
@@ -70,6 +76,8 @@ Im Rahmen der Interviews konnten mehrere thematische Schwerpunkte identifiziert 
 : Analyseergebnisse der Interviews {#tbl-analyse}
 
 Wie Table 1 zu entnehmen ist, konnten sieben zentrale Anforderungsbereiche identifiziert werden. So wird der Anspruch formuliert, dass die Gestaltung der KI-Anwendung allen Menschen eine gleichberechtigte und selbstständige Nutzung ermöglichen soll (TN_1, Zeile 75). Ebenso wird auf eine gleichberechtigte Verfügbarkeit Wert gelegt, sodass die Anwendung allen Nutzenden jederzeit und unter gleichen Bedingungen zugänglich ist (TN_1, Zeile 75). Darüber hinaus wird eine visuell-textliche Darstellungsweise gewünscht, die eine schnelle, klare und inhaltlich korrekte Wahrnehmung und Verständlichkeit der bereitgestellten Informationen ermöglicht (TN_1, Zeile 83–86). Dieses Kriterium ist vom Anspruch der Barrierefreiheit abzugrenzen, da es nicht auf die allgemeine Zugänglichkeit der Anwendung, sondern auf die konkrete Darstellung der Inhalte und ihre Erfassung abzielt. Im Zentrum steht hierbei das Ergebnis der KI-Anwendung, das die Nutzenden darüber informiert, ob es sich bei einem Inhalt um Misinformation handelt oder nicht. Zusätzlich soll eine vertiefende Auseinandersetzung mit den zugrunde liegenden Quellen möglich sein, die eine freiwillige Erweiterung der KI-Rückmeldung darstellt (TN_1, Zeile 123–125). Zwar wird die Möglichkeit für Rückfragen zum Verständnis gewünscht (TN_1, Zeile 142), darüber hinausgehende Interaktionen mit der KI-Anwendung werden jedoch abgelehnt. Gefordert wird, dass das Detektionsergebnis unabhängig von weiterer User-Interaktion bleibt und keine dialogische Auseinandersetzung mit der Anwendung möglich ist (TN_1, Zeile 120 - 122). Diese Forderung basiert auf der Erfahrung, dass Chatbots durch Nutzende beeinflussbar sind und dadurch das Ergebnis der Detektion verändert werden könnte. Die geforderte Unabhängigkeit bezieht sich weiterhin auch auf die zugrunde liegenden Daten der KI. Es soll vermieden werden, dass personenbezogene Informationen des Users in die Bewertung einfließen, etwa zur Anpassung an Sprachstil oder politische Haltung (TN_2, Zeile 56). Die Anwendung soll als neutrale Instanz konzipiert sein, unabhängig auch von möglichen Interessen staatlicher oder unternehmerischer Akteure (TN_2, Zeile 57–59). Folglich wird gefordert, dass die Anwendung frei von parteipolitischen Einflüssen agiert und ausschließlich auf Grundlage neutraler, objektiver Kriterien Inhalte auf Desinformation prüft und bewertet. Diese Bewertung soll visuell-textlich für alle Nutzenden schnell und verständlich erfassbar sein. Es soll die Möglichkeit geben, die Quellen und Gründe für die Bewertung einzusehen und eigenständig zu überprüfen.
+
+### Quantitative Ergebnisse
 
 ## Diskussion
 
