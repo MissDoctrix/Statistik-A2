@@ -129,4 +129,12 @@ Danke für Ihre Unterstützung!
 
 ## Eigenschaften der geplanten Stichprobe {.unnumbered}
 
-Für die quantitative Studie werden mindestens drei vollständige Teilnahmen pro Gruppenmitglied erhoben. Teilnahmeberechtigt sind Personen ab 18 Jahren mit ausreichenden Deutschkenntnissen, die die Umfrage über PC oder Tablet durchführen. Ausgeschlossen sind Studierende der Veranstaltung „Statistische Methoden in der Nutzerforschung“. Die Stichprobe soll möglichst vielfältig im Hinblick auf Alter und Technikaffinität sein, um Unterschiede in der subjektiven Bewertung von Benutzeroberflächen untersuchen zu können. Eine repräsentative Auswahl wird nicht angestrebt, da es sich um eine explorative Studie im Rahmen einer Lehrveranstaltung handelt.
+Für die quantitative Studie werden mindestens drei vollständige Teilnahmen pro Gruppenmitglied erhoben. Teilnahmeberechtigt sind Personen 
+
+ab 18 Jahren mit ausreichenden Deutschkenntnissen, die die Umfrage über PC oder Tablet durchführen. Ausgeschlossen sind Studierende der 
+
+Veranstaltung „Statistische Methoden in der Nutzerforschung“. Die Stichprobe soll möglichst vielfältig im Hinblick auf Alter und 
+
+Technikaffinität sein, um Unterschiede in der subjektiven Bewertung von Benutzeroberflächen untersuchen zu können. Eine repräsentative 
+
+Auswahl wird nicht angestrebt, da es sich um eine explorative Studie im Rahmen einer Lehrveranstaltung handelt.
