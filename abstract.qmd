@@ -21,7 +21,7 @@ csl: apa7.csl
 ---
 
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
-**Für die Abgabe aktueller GitHub Hash:** 32c69871b5bfda39ec5d7929441cb13bccb6e685
+**Für die Abgabe aktueller GitHub Hash:** ead2de2c7085b955cca3ce6db265134d9240202b
 
 ## Einleitung
 
@@ -86,6 +86,94 @@ Im Rahmen der Interviews konnten mehrere thematische Schwerpunkte identifiziert 
 Wie Table 1 zu entnehmen ist, konnten sieben zentrale Anforderungsbereiche identifiziert werden. So wird der Anspruch formuliert, dass die Gestaltung der KI-Anwendung allen Menschen eine gleichberechtigte und selbstständige Nutzung ermöglichen soll (TN_1, Zeile 75). Ebenso wird auf eine gleichberechtigte Verfügbarkeit Wert gelegt, sodass die Anwendung allen Nutzenden jederzeit und unter gleichen Bedingungen zugänglich ist (TN_1, Zeile 75). Darüber hinaus wird eine visuell-textliche Darstellungsweise gewünscht, die eine schnelle, klare und inhaltlich korrekte Wahrnehmung und Verständlichkeit der bereitgestellten Informationen ermöglicht (TN_1, Zeile 83–86). Dieses Kriterium ist vom Anspruch der Barrierefreiheit abzugrenzen, da es nicht auf die allgemeine Zugänglichkeit der Anwendung, sondern auf die konkrete Darstellung der Inhalte und ihre Erfassung abzielt. Im Zentrum steht hierbei das Ergebnis der KI-Anwendung, das die Nutzenden darüber informiert, ob es sich bei einem Inhalt um Misinformation handelt oder nicht. Zusätzlich soll eine vertiefende Auseinandersetzung mit den zugrunde liegenden Quellen möglich sein, die eine freiwillige Erweiterung der KI-Rückmeldung darstellt (TN_1, Zeile 123–125). Zwar wird die Möglichkeit für Rückfragen zum Verständnis gewünscht (TN_1, Zeile 142), darüber hinausgehende Interaktionen mit der KI-Anwendung werden jedoch abgelehnt. Gefordert wird, dass das Detektionsergebnis unabhängig von weiterer User-Interaktion bleibt und keine dialogische Auseinandersetzung mit der Anwendung möglich ist (TN_1, Zeile 120 - 122). Diese Forderung basiert auf der Erfahrung, dass Chatbots durch Nutzende beeinflussbar sind und dadurch das Ergebnis der Detektion verändert werden könnte. Die geforderte Unabhängigkeit bezieht sich weiterhin auch auf die zugrunde liegenden Daten der KI. Es soll vermieden werden, dass personenbezogene Informationen des Users in die Bewertung einfließen, etwa zur Anpassung an Sprachstil oder politische Haltung (TN_2, Zeile 56). Die Anwendung soll als neutrale Instanz konzipiert sein, unabhängig auch von möglichen Interessen staatlicher oder unternehmerischer Akteure (TN_2, Zeile 57–59). Folglich wird gefordert, dass die Anwendung frei von parteipolitischen Einflüssen agiert und ausschließlich auf Grundlage neutraler, objektiver Kriterien Inhalte auf Desinformation prüft und bewertet. Diese Bewertung soll visuell-textlich für alle Nutzenden schnell und verständlich erfassbar sein. Es soll die Möglichkeit geben, die Quellen und Gründe für die Bewertung einzusehen und eigenständig zu überprüfen.
 
 ### Quantitative Ergebnisse
+
+Notizen:
+
+Forschungsfrage: Wie gehen Personen in diesem Kontext mit unterschiedlichen Feedback-Arten um?
+
+Daten wurden bereits gefiltert von Lehrveranstaltungsteam, keine weitere Filterung vorgenommen.
+
+## Daten anschauen
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Pakete laden
+library(dplyr)
+library(psych)
+library(tidyr)
+library(knitr)
+library(kableExtra)
+library(ggplot2)
+
+# CSV-Datei einlesen
+data <- read.csv("data_combined.csv")
+
+# Gruppierungsvariable erstellen: Evaluativ vs. Empfehlend
+data$group <- NA
+data$group[!is.na(data$workload_mean_E)] <- "Evaluativ"
+data$group[!is.na(data$workload_mean_R)] <- "Empfehlend"
+
+# Daten ins lange Format bringen
+long_data <- data %>%
+  select(participantId, group, workload_mean_E, workload_mean_R) %>%
+  pivot_longer(cols = c(workload_mean_E, workload_mean_R),
+               names_to = "variable",
+               values_to = "workload") %>%
+  filter(!is.na(workload)) %>%
+  mutate(group = ifelse(variable == "workload_mean_E", "Evaluativ", "Empfehlend"))
+
+# Deskriptive Statistik berechnen
+desc_stats <- long_data %>%
+  group_by(group) %>%
+  summarise(
+    n = n(),
+    mean = mean(workload, na.rm = TRUE),
+    median = median(workload, na.rm = TRUE),
+    sd = sd(workload, na.rm = TRUE),
+    min = min(workload, na.rm = TRUE),
+    max = max(workload, na.rm = TRUE)
+  )
+
+# Tabelle ausgeben
+kable(desc_stats,
+      caption = "Deskriptive Statistik der subjektiven Belastung nach KI-Typ",
+      booktabs = TRUE) %>%
+  kable_styling()
+# t-Test für unabhängige Stichproben (Welch-Test)
+t_test_result <- t.test(
+  workload ~ group,
+  data = long_data,
+  var.equal = FALSE
+)
+
+
+# Plot-Daten vorbereiten
+plot_data <- long_data %>%
+  group_by(group) %>%
+  summarise(
+    mean_workload = mean(workload, na.rm = TRUE),
+    sd_workload = sd(workload, na.rm = TRUE),
+    n = n(),
+    se = sd_workload / sqrt(n),
+    ci_lower = mean_workload - qt(0.975, df = n-1) * se,
+    ci_upper = mean_workload + qt(0.975, df = n-1) * se
+  )
+
+# Dot-and-Whisker-Plot erstellen
+ggplot(plot_data, aes(x = group, y = mean_workload)) +
+  geom_point(size = 4) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.1) +
+  labs(
+    title = "Subjektive Belastung nach KI-Typ (evaluativ vs. empfehlend)",
+    x = "KI-Typ",
+    y = "Subjektive Belastung (0–200)"
+  ) +
+  theme_minimal(base_size = 14)
+
+```
 
 ## Diskussion
 
