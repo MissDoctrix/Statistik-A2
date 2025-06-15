@@ -87,6 +87,7 @@ Wie Table 1 zu entnehmen ist, konnten sieben zentrale Anforderungsbereiche ident
 
 ### Quantitative Ergebnisse
 
+<<<<<<< Updated upstream
 Notizen:
 
 Forschungsfrage: Wie gehen Personen in diesem Kontext mit unterschiedlichen Feedback-Arten um?
@@ -174,8 +175,55 @@ ggplot(plot_data, aes(x = group, y = mean_workload)) +
   theme_minimal(base_size = 14)
 
 ```
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+# Pakete laden
+library(psych)
+library(knitr)
 
-## Diskussion
+# Daten laden
+data <- read.csv("data_combined.csv", stringsAsFactors = FALSE)
+
+# Items für die KI-Skala
+ki_items <- grep("^ki_dlr_wat_", names(data), value = TRUE)
+data$DLR_KI <- rowMeans(data[, ki_items], na.rm = TRUE)
+
+# Vertrauen (invertiert)
+data$Trust <- 7 - as.numeric(data$aiInformationDistrust)
+
+# Cronbach's Alpha für mentale Belastung (KI)
+alpha_ki <- psych::alpha(data[, ki_items], check.keys = TRUE)$total$raw_alpha
+
+# Zusammenfassung berechnen
+summary_table <- data.frame(
+  Variable = c("Mentale Belastung", "Vertrauen"),
+  n = c(sum(!is.na(data$DLR_KI)), sum(!is.na(data$Trust))),
+  mean = c(mean(data$DLR_KI, na.rm = TRUE), mean(data$Trust, na.rm = TRUE)),
+  median = c(median(data$DLR_KI, na.rm = TRUE), median(data$Trust, na.rm = TRUE)),
+  sd = c(sd(data$DLR_KI, na.rm = TRUE), sd(data$Trust, na.rm = TRUE)),
+  min = c(min(data$DLR_KI, na.rm = TRUE), min(data$Trust, na.rm = TRUE)),
+  max = c(max(data$DLR_KI, na.rm = TRUE), max(data$Trust, na.rm = TRUE)),
+  alpha = c(round(alpha_ki, 3),"-")
+)
+
+# Tabelle anzeigen
+kable(summary_table, caption = "Deskriptive Statistik für mentale Belastung und Vertrauen", digits = 3)
+
+# Scatter-Plot
+ggplot(data, aes(x = DLR_KI, y = Trust)) +
+  geom_point(color = "#0072B2", alpha = 0.7, size = 2) +
+  geom_smooth(method = "lm", se = FALSE, color = "#D55E00") +
+  labs(
+    title = "Zusammenhang zwischen mentaler Belastung (DLR) und Vertrauen",
+    x = "Mentale Belastung (DLR-Skala, mit KI)",
+    y = "Vertrauen in das KI-System"
+  ) +
+  theme_minimal(base_size = 14)
+
+# Beispiel Korrelations-Test
+cor_test <- cor.test(data$DLR_KI, data$Trust, method = "pearson")
+```
+
+### Diskussion
 
 ## Code of Conduct {.unnumbered}
 
