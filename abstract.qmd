@@ -14,11 +14,13 @@ format:
     fig-cap-location: top
     fig-numbering: true
     tbl-numbering: true
+    code-fold: true
   html:
     fontsize: 12pt
     number-sections: true
     fig-numbering: true
     tbl-numbering: true
+    code-fold: true
 lang: de
 bibliography: literatur.bib
 csl: apa7.csl
@@ -28,16 +30,6 @@ csl: apa7.csl
 **Für die Abgabe aktueller GitHub Hash:** ead2de2c7085b955cca3ce6db265134d9240202b
 
 ## Einleitung
-
-Test:
-
-Wie in Abbildung @fig-demo-plot zu sehen ist...
-
-```{#| label: fig:demo-plot}
-#| fig-cap: "Ein Beispielplot"
-
-plot(1:10)
-```
 
 ## Literaturübersicht
 
