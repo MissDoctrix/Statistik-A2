@@ -12,9 +12,13 @@ format:
     fontsize: 12pt
     number-sections: true
     fig-cap-location: top
+    fig-numbering: true
+    tbl-numbering: true
   html:
     fontsize: 12pt
     number-sections: true
+    fig-numbering: true
+    tbl-numbering: true
 lang: de
 bibliography: literatur.bib
 csl: apa7.csl
@@ -24,6 +28,16 @@ csl: apa7.csl
 **Für die Abgabe aktueller GitHub Hash:** ead2de2c7085b955cca3ce6db265134d9240202b
 
 ## Einleitung
+
+Test:
+
+Wie in Abbildung @fig-demo-plot zu sehen ist...
+
+```{#| label: fig:demo-plot}
+#| fig-cap: "Ein Beispielplot"
+
+plot(1:10)
+```
 
 ## Literaturübersicht
 
@@ -91,9 +105,10 @@ Der Datensatz für die Analyse wurde vor einem Team vorgefiltert, eine zusätzli
 
 Zur quantitativen Auswertung der Studie wurden zwei abhängige Variablen betrachtet: die subjektive mentale Belastung sowie das Vertrauen in das verwendete KI-System. Die mentale Belastung wurde mithilfe der DLR-Workload-Skala (@dlr119443) nach der Nutzung der jeweiligen KI-Anwendung erfasst. Die Erhebung erfolgte über eine visuelle Analogskala im Bereich von 0 bis 200 Punkten. Das Vertrauen in das System wurde anhand eines Einzelitems auf einer 5-Punkte-Likert-Skala gemessen (1 = sehr geringes Vertrauen, 5 = sehr hohes Vertrauen) nach @Mandsen_Gregor.
 
-Tabelle \[Referenz\] zeigt die deskriptiven Statistiken beider Variablen. Die mentale Belastung weist bei *N* = 176 einen Mittelwert von *M* = 105.90 (SD = 22.63) auf, bei einem Wertebereich von 44.38 bis 178.13. Dies deutet auf eine mittlere bis leicht erhöhte Beanspruchung hin. Das Vertrauen in das KI-System lag im Mittel bei *M* = 3.35 (SD = 0.93) und spiegelt somit eine eher neutrale bis tendenziell positive Haltung gegenüber der KI-Anwendung wider. Zur differenzierten Betrachtung der mentalen Belastung nach Interaktionstyp wurde zusätzlich eine Gruppierung nach KI-Typ vorgenommen (evaluativ vs. empfehlend). Dies wurde in (Referenz) zusammengefasst.
+@tbl-belastung zeigt die deskriptiven Statistiken beider Variablen. Die mentale Belastung weist bei *N* = 176 einen Mittelwert von *M* = 105.90 (SD = 22.63) auf, bei einem Wertebereich von 44.38 bis 178.13. Dies deutet auf eine mittlere bis leicht erhöhte Beanspruchung hin. Das Vertrauen in das KI-System lag im Mittel bei *M* = 3.35 (SD = 0.93) und spiegelt somit eine eher neutrale bis tendenziell positive Haltung gegenüber der KI-Anwendung wider. Zur differenzierten Betrachtung der mentalen Belastung nach Interaktionstyp wurde zusätzlich eine Gruppierung nach KI-Typ vorgenommen (evaluativ vs. empfehlend). Dies wurde in @tbl-belastung zusammengefasst.
 
 ```{r}
+#| label: setup
 #| echo: false
 #| message: false
 #| warning: false
@@ -169,6 +184,7 @@ data$Trust <- 7 - as.numeric(data$aiInformationDistrust)
 # Cronbach's Alpha für mentale Belastung (KI)
 alpha_ki <- psych::alpha(data[, ki_items], check.keys = TRUE)$total$raw_alpha
 
+
 # Zusammenfassung 
 summary_table <- data.frame(
   Variable = c("Mentale Belastung", "Vertrauen"),
@@ -181,12 +197,15 @@ summary_table <- data.frame(
   alpha = c(round(alpha_ki, 3),"-")
 )
 
+#| label: tbl-belastung-vertrauen
+#| tbl-cap: "Deskriptive Statistik für mentale Belastung und Vertrauen"
+
 # Tabelle 
 kable(summary_table, caption = "Deskriptive Statistik für mentale Belastung und Vertrauen", digits = 3)
 
 ```
 
-Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „Empfehlend“ (M = 104,85, SD = 20,31) und der Bedingung „Evaluativ“ (M = 106,97, SD = 20,87), *t*(173,63) = -0,62, *p* = .536. Die Effektstärke entspricht nach Cohen (1988) einem kleinen Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot **(Referenz)** veranschaulicht.
+Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „Empfehlend“ (M = 104,85, SD = 20,31) und der Bedingung „Evaluativ“ (M = 106,97, SD = 20,87), *t*(173,63) = -0,62, *p* = .536. Die Effektstärke entspricht nach Cohen (1988) einem kleinen Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot @fig-belastung-plot veranschaulicht.
 
 ```{r}
 #| echo: false
@@ -212,6 +231,9 @@ plot_data <- data_grouped %>%
     .groups = "drop"
   )
 
+#| label: fig-belastung-plot
+#| fig-cap: "Mentale Belastung nach KI-Typ"
+
 # Dot-and-Whisker-Plot 
 ggplot(plot_data, aes(x = group, y = mean)) +
   geom_point(size = 4, color = "#2C3E50") +
@@ -225,10 +247,15 @@ ggplot(plot_data, aes(x = group, y = mean)) +
 
 ```
 
-Zudem wurde eine Korrelationsanalyse nach Pearson durchgeführt, um den Zusammenhang zwischen der subjektiv empfundenen mentalen Belastung und dem Vertrauen in das KI-System zu untersuchen. Die Analyse ergab eine signifikante negative Korrelation (r(174) = -0.23, p \< .002), was darauf hinweist, dass eine höhere empfundene kognitive Belastung mit einem tendenziell niedrigeren Vertrauen in das System einhergeht. Diese Beziehung wird in Abbildung 2 **(Referenz)**, dem Scatter-Plot mit Regressionslinie, grafisch dargestellt. Die Punktwolke zeigt eine leichte negative Tendenz, unterstützt durch die eingefügte Regressionslinie.
+Zudem wurde eine Korrelationsanalyse nach Pearson durchgeführt, um den Zusammenhang zwischen der subjektiv empfundenen mentalen Belastung und dem Vertrauen in das KI-System zu untersuchen. Die Analyse ergab eine signifikante negative Korrelation (r(174) = -0.23, p \< .002), was darauf hinweist, dass eine höhere empfundene kognitive Belastung mit einem tendenziell niedrigeren Vertrauen in das System einhergeht. Diese Beziehung wird in @fig-korrelation-belastung-vertrauen, dem Scatter-Plot mit Regressionslinie, grafisch dargestellt. Die Punktwolke zeigt eine leichte negative Tendenz, unterstützt durch die eingefügte Regressionslinie.
 
-```{r, echo = FALSE, warning = FALSE, message = FALSE}
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
 
+#| label: fig-korrelation-belastung-vertrauen
+#| fig-cap: "Zusammenhang: mentaler Belastung und Vertrauen"
 # Scatter-Plot
 ggplot(data, aes(x = DLR_KI, y = Trust)) +
   geom_point(color = "#0072B2", alpha = 0.7, size = 2) +
