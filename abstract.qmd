@@ -1,10 +1,8 @@
 ---
 title: "abstract"
 author:
-  - "Marleen Fox"
   - "Carys Artemis Lamm"
   - "Lara Senger"
-  - "Luisa von Rhein"
   - "Mino Wittemann"
 date: today
 date-format: "D. MMMM YYYY"
@@ -13,9 +11,11 @@ format:
     papersize: a4
     fontsize: 12pt
     number-sections: true
+    fig-cap-location: top
   html:
     fontsize: 12pt
     number-sections: true
+lang: de
 bibliography: literatur.bib
 csl: apa7.csl
 ---
@@ -87,14 +87,11 @@ Wie Table 1 zu entnehmen ist, konnten sieben zentrale Anforderungsbereiche ident
 
 ### Quantitative Ergebnisse
 
-<<<<<<< Updated upstream
-Notizen:
+Der Datensatz für die Analyse wurde vor einem Team vorgefiltert, eine zusätzliche Filterung oder Ausschlusskriterien nach Datenerhebung war nicht erforderlich. Es wurden N = 176 Teilnehmenden in die folgenden Analyse berrücksichtigt Die Stichprobe verteilte sich nahezu gleichmäßig: 89 Personen bearbeiteten die Aufgabe mit einer empfehlenden KI-Variante, während 87 Teilnehmende mit einer evaluativen Variante arbeiteten. Alle Teilnehmenden durchliefen eine Phase ohne und eine Phase mit KI-Unterstützung. Das Alter wurde metrisch erhoben. Das Durchschnittsalter betrug M = 25,9 (Mdn = 22, SD = 10,6). Eine obere Altersgrenze wurde nicht gesetzt, um eine möglichst diverse Stichprobe zu gewährleisten. Das Geschlecht wurde nominalskaliert erfasst (männlich, weiblich, divers). 90 Teilnehmende identifizierten sich als weiblich, 84 als männlich und 2 als non-binär. Auf die Frage nach der Vorerfahrung im Umgang mit Künstlicher Intelligenz (metrisch) stuften 9 Teilnehmende diese als sehr hoch ein, während zehn Personen angaben, über sehr geringe Vorerfahrung zu verfügen. Die Mehrheit von 85 Teilnehmenden bewertete ihre Vorerfahrung als mittelmäßig.
 
-Forschungsfrage: Wie gehen Personen in diesem Kontext mit unterschiedlichen Feedback-Arten um?
+Zur quantitativen Auswertung der Studie wurden zwei abhängige Variablen betrachtet: die subjektive mentale Belastung sowie das Vertrauen in das verwendete KI-System. Die mentale Belastung wurde mithilfe der DLR-Workload-Skala (@dlr119443) nach der Nutzung der jeweiligen KI-Anwendung erfasst. Die Erhebung erfolgte über eine visuelle Analogskala im Bereich von 0 bis 200 Punkten. Das Vertrauen in das System wurde anhand eines Einzelitems auf einer 5-Punkte-Likert-Skala gemessen (1 = sehr geringes Vertrauen, 5 = sehr hohes Vertrauen) nach @Mandsen_Gregor.
 
-Daten wurden bereits gefiltert von Lehrveranstaltungsteam, keine weitere Filterung vorgenommen.
-
-## Daten anschauen
+Tabelle \[Referenz\] zeigt die deskriptiven Statistiken beider Variablen. Die mentale Belastung weist bei *N* = 176 einen Mittelwert von *M* = 105.90 (SD = 22.63) auf, bei einem Wertebereich von 44.38 bis 178.13. Dies deutet auf eine mittlere bis leicht erhöhte Beanspruchung hin. Das Vertrauen in das KI-System lag im Mittel bei *M* = 3.35 (SD = 0.93) und spiegelt somit eine eher neutrale bis tendenziell positive Haltung gegenüber der KI-Anwendung wider. Zur differenzierten Betrachtung der mentalen Belastung nach Interaktionstyp wurde zusätzlich eine Gruppierung nach KI-Typ vorgenommen (evaluativ vs. empfehlend). Dies wurde in (Referenz) zusammengefasst.
 
 ```{r}
 #| echo: false
@@ -103,79 +100,58 @@ Daten wurden bereits gefiltert von Lehrveranstaltungsteam, keine weitere Filteru
 
 # Pakete laden
 library(dplyr)
-library(psych)
 library(tidyr)
+library(psych)
 library(knitr)
 library(kableExtra)
 library(ggplot2)
 
-# CSV-Datei einlesen
-data <- read.csv("data_combined.csv")
+# Daten einlesen
+data <- read.csv("data_combined.csv", stringsAsFactors = FALSE)
 
-# Gruppierungsvariable erstellen: Evaluativ vs. Empfehlend
+# Items zur Belastung nach KI-Anwendung
+ki_items <- grep("^ki_dlr_wat_", names(data), value = TRUE)
+
+# Mittelwert berechnen (Belastung nach KI-Nutzung)
+data$DLR_KI <- rowMeans(data[, ki_items], na.rm = TRUE)
+
+# Gruppierungsvariable erstellen anhand vorhandener Werte
 data$group <- NA
 data$group[!is.na(data$workload_mean_E)] <- "Evaluativ"
 data$group[!is.na(data$workload_mean_R)] <- "Empfehlend"
 
-# Daten ins lange Format bringen
-long_data <- data %>%
-  select(participantId, group, workload_mean_E, workload_mean_R) %>%
-  pivot_longer(cols = c(workload_mean_E, workload_mean_R),
-               names_to = "variable",
-               values_to = "workload") %>%
-  filter(!is.na(workload)) %>%
-  mutate(group = ifelse(variable == "workload_mean_E", "Evaluativ", "Empfehlend"))
+# Falls 'group' NA ist, und DLR_KI-Wert vorhanden, trotzdem mitnehmen
+data_grouped <- data %>%
+  filter(!is.na(group) & !is.na(DLR_KI))
 
-# Deskriptive Statistik berechnen
-desc_stats <- long_data %>%
+# Deskriptive Statistik nach Gruppen
+desc_stats_grouped <- data_grouped %>%
   group_by(group) %>%
   summarise(
-    n = n(),
-    mean = mean(workload, na.rm = TRUE),
-    median = median(workload, na.rm = TRUE),
-    sd = sd(workload, na.rm = TRUE),
-    min = min(workload, na.rm = TRUE),
-    max = max(workload, na.rm = TRUE)
+    n = sum(!is.na(DLR_KI)),
+    mean = mean(DLR_KI, na.rm = TRUE),
+    median = median(DLR_KI, na.rm = TRUE),
+    sd = sd(DLR_KI, na.rm = TRUE),
+    min = min(DLR_KI, na.rm = TRUE),
+    max = max(DLR_KI, na.rm = TRUE),
+    .groups = "drop"
   )
 
-# Tabelle ausgeben
-kable(desc_stats,
-      caption = "Deskriptive Statistik der subjektiven Belastung nach KI-Typ",
-      booktabs = TRUE) %>%
+#| label: tbl-belastung
+#| tbl-cap: "Deskriptive Statistik der mentalen Belastung"
+# Tabelle anzeigen
+kable(desc_stats_grouped,
+      caption = "Deskriptive Statistik der mentalen Belastung nach KI-Typ",
+      booktabs = TRUE, digits = 2) %>%
   kable_styling()
-# t-Test für unabhängige Stichproben (Welch-Test)
-t_test_result <- t.test(
-  workload ~ group,
-  data = long_data,
-  var.equal = FALSE
-)
-
-
-# Plot-Daten vorbereiten
-plot_data <- long_data %>%
-  group_by(group) %>%
-  summarise(
-    mean_workload = mean(workload, na.rm = TRUE),
-    sd_workload = sd(workload, na.rm = TRUE),
-    n = n(),
-    se = sd_workload / sqrt(n),
-    ci_lower = mean_workload - qt(0.975, df = n-1) * se,
-    ci_upper = mean_workload + qt(0.975, df = n-1) * se
-  )
-
-# Dot-and-Whisker-Plot erstellen
-ggplot(plot_data, aes(x = group, y = mean_workload)) +
-  geom_point(size = 4) +
-  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.1) +
-  labs(
-    title = "Subjektive Belastung nach KI-Typ (evaluativ vs. empfehlend)",
-    x = "KI-Typ",
-    y = "Subjektive Belastung (0–200)"
-  ) +
-  theme_minimal(base_size = 14)
 
 ```
-```{r, echo = FALSE, warning = FALSE, message = FALSE}
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
 # Pakete laden
 library(psych)
 library(knitr)
@@ -193,7 +169,7 @@ data$Trust <- 7 - as.numeric(data$aiInformationDistrust)
 # Cronbach's Alpha für mentale Belastung (KI)
 alpha_ki <- psych::alpha(data[, ki_items], check.keys = TRUE)$total$raw_alpha
 
-# Zusammenfassung berechnen
+# Zusammenfassung 
 summary_table <- data.frame(
   Variable = c("Mentale Belastung", "Vertrauen"),
   n = c(sum(!is.na(data$DLR_KI)), sum(!is.na(data$Trust))),
@@ -205,23 +181,70 @@ summary_table <- data.frame(
   alpha = c(round(alpha_ki, 3),"-")
 )
 
-# Tabelle anzeigen
+# Tabelle 
 kable(summary_table, caption = "Deskriptive Statistik für mentale Belastung und Vertrauen", digits = 3)
+
+```
+
+Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „Empfehlend“ (M = 104,85, SD = 20,31) und der Bedingung „Evaluativ“ (M = 106,97, SD = 20,87), *t*(173,63) = -0,62, *p* = .536. Die Effektstärke entspricht nach Cohen (1988) einem kleinen Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot **(Referenz)** veranschaulicht.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+# Unabhängiger t-Test (Welch-Test) für mentale Belastung
+t_test_result <- t.test(DLR_KI ~ group,
+                        data = data_grouped,
+                        var.equal = FALSE)
+
+# Daten für Plot vorbereiten
+plot_data <- data_grouped %>%
+  group_by(group) %>%
+  summarise(
+    mean = mean(DLR_KI, na.rm = TRUE),
+    sd = sd(DLR_KI, na.rm = TRUE),
+    n = n(),
+    se = sd / sqrt(n),
+    ci_lower = mean - qt(0.975, df = n - 1) * se,
+    ci_upper = mean + qt(0.975, df = n - 1) * se,
+    .groups = "drop"
+  )
+
+# Dot-and-Whisker-Plot 
+ggplot(plot_data, aes(x = group, y = mean)) +
+  geom_point(size = 4, color = "#2C3E50") +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.1, color = "#2C3E50") + scale_y_continuous(limits = c(95, 115)) +
+  labs(
+    title = "Abbildung: Mentale Belastung nach KI-Typ",
+    x = "KI-Typ",
+    y = "Mentale Belastung (0–200)"
+  ) +
+  theme_minimal(base_size = 14)
+
+```
+
+Zudem wurde eine Korrelationsanalyse nach Pearson durchgeführt, um den Zusammenhang zwischen der subjektiv empfundenen mentalen Belastung und dem Vertrauen in das KI-System zu untersuchen. Die Analyse ergab eine signifikante negative Korrelation (r(174) = -0.23, p \< .002), was darauf hinweist, dass eine höhere empfundene kognitive Belastung mit einem tendenziell niedrigeren Vertrauen in das System einhergeht. Diese Beziehung wird in Abbildung 2 **(Referenz)**, dem Scatter-Plot mit Regressionslinie, grafisch dargestellt. Die Punktwolke zeigt eine leichte negative Tendenz, unterstützt durch die eingefügte Regressionslinie.
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 
 # Scatter-Plot
 ggplot(data, aes(x = DLR_KI, y = Trust)) +
   geom_point(color = "#0072B2", alpha = 0.7, size = 2) +
   geom_smooth(method = "lm", se = FALSE, color = "#D55E00") +
   labs(
-    title = "Zusammenhang zwischen mentaler Belastung (DLR) und Vertrauen",
+    title = "Zusammenhang: mentale Belastung (DLR) und Vertrauen",
     x = "Mentale Belastung (DLR-Skala, mit KI)",
     y = "Vertrauen in das KI-System"
   ) +
   theme_minimal(base_size = 14)
 
-# Beispiel Korrelations-Test
+# Korrelations-Test
 cor_test <- cor.test(data$DLR_KI, data$Trust, method = "pearson")
 ```
+
+Zusammenfassend lässt sich festhalten, dass sich die beiden getesteten KI-Systeme in ihrer Auswirkung auf die mentale Belastung nicht signifikant voneinander unterschieden. Beide Varianten führten zu vergleichbaren Belastungswerten, was darauf hinweist, dass der eingesetzte KI-Typ – evaluativ oder empfehlend – keinen entscheidenden Einfluss auf das subjektive Belastungsempfinden hatte. Allerdings zeigte sich ein relevanter Zusammenhang zwischen der empfundenen mentalen Belastung und dem Vertrauen in das System: Teilnehmende, die das System als stärker belastend wahrnahmen, berichteten tendenziell ein geringeres Vertrauen in die KI. Diese Ergebnisse sind insbesondere für die nutzerzentrierte Gestaltung von KI-Anwendungen bedeutsam, da sie nahelegen, dass eine wahrgenommene kognitive Entlastung das Vertrauen der Nutzenden in ein KI-System fördern kann.
 
 ### Diskussion
 
@@ -233,7 +256,7 @@ Wir begegenen einander offen und respektvoll. Konstruktives Feedback wird wertge
 
 Es wird eine ausgewogene Aufteilung der Arbeitslast angestrebt, die die Stärken und Schwächen der einzelnen Mitgleider berücksichtigt. Folglich verpflichten wir uns zu einer offenen und direkten Kommunikation. Im Falle möglicher Verzögerungen, Probleme oder unerwarteter Auslastungen wird frühzeitig kommuniziert und sich gegenseitig unterstützt.
 
-Wir verpflichten uns der Einhaltung wissenschaftlicher Standards, mit besonderer Umsicht gegenüber erhobener, personenbezogener Daten und der Wahrung ihrer Vertraulichkeit. Ebenso wird streng auf sorgfältigen Recherche und korrekte Zitation geachtet. Die verantwortungsvolle Nutzung von AI Tools erfolgt transparent mit Beschreibung und Kennzeichnung der Nutzung. So wurde @openai2025chatgpt genutzt, um die Formulierungen zu präzisieren und die Rechtschreibung zu kontrollieren.
+Wir verpflichten uns der Einhaltung wissenschaftlicher Standards, mit besonderer Umsicht gegenüber erhobener, personenbezogener Daten und der Wahrung ihrer Vertraulichkeit. Ebenso wird streng auf sorgfältigen Recherche und korrekte Zitation geachtet. Die verantwortungsvolle Nutzung von AI Tools erfolgt transparent mit Beschreibung und Kennzeichnung der Nutzung. So wurde @openai2025chatgpt genutzt, um die Formulierungen zu präzisieren, Code zu überprüfen und die Rechtschreibung zu kontrollieren.
 
 ## Literaturverzeichnis {.unnumbered}
 
