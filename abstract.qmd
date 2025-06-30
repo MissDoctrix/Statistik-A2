@@ -255,7 +255,7 @@ Zudem wurde eine Korrelationsanalyse nach Pearson durchgeführt, um den Zusammen
 #| fig-cap: "Zusammenhang: mentaler Belastung und Vertrauen"
 # Scatter-Plot
 ggplot(data, aes(x = DLR_KI, y = Trust)) +
-  geom_point(color = "#0072B2", alpha = 0.7, size = 2) +
+  geom_jitter(width = 0.2, height = 0.2, color = "#0072B2", alpha = 0.6, size = 2) +
   geom_smooth(method = "lm", se = FALSE, color = "#D55E00") +
   labs(
     title = "Zusammenhang: mentale Belastung (DLR) und Vertrauen",
