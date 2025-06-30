@@ -27,7 +27,7 @@ csl: apa7.csl
 ---
 
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
-**Für die Abgabe aktueller GitHub Hash:** 499f4c25c5c0206799208c89664014b3e7679dde
+**Für die Abgabe aktueller GitHub Hash:** 2b414e8d0478ee4c6328d2f6641749a22a015246
 
 ## Einleitung
 
@@ -43,7 +43,7 @@ Eine andere Arbeit von @shu_defend_2019 evaluiert in einer Nutzendenstudie, wie 
 
 Die drei genannten Forschungsarbeiten bieten einen ersten Ansatz, sich mit dem Themenfeld vertraut zu machen. Jedoch müssen mehr wissenschaftliche Veröffentlichungen mit dem Schwerpunkt auf Wahrnehmung und Beurteilung unterschiedlicher Feedbacksysteme durch die Nutzenden herangezogen werden, die zudem den Fokus aus Nutzendentests legen und diese Untersuchungen vergleichen. Ebenso sind mehr Arbeiten zu suchen, die empirisch untersuchen, welche Anforderungen durch die Nutzenden gestellt werden und ob sich diese in bestehenden Modellen bereits wiederfinden.
 
-Anknüpfend an die Literatur liegt unser Fokus auf der Analyse konzeptioneller und gestalterischer Anforderungen, die Nutzende an eine KI-Anwendung stellen.
+Anknüpfend an die Literatur liegt unser Fokus auf der Analyse konzeptioneller und gestalterischer Anforderungen, die Nutzende an eine KI-Anwendung stellen. ***(Ggf anpassen, auf konkrete Frage mappen, für runden Boden des Inhalts.)***
 
 ## Methode
 
@@ -51,7 +51,7 @@ Anknüpfend an die Literatur liegt unser Fokus auf der Analyse konzeptioneller u
 
 Um zu untersuchen, welche Anforderungen Nutzende an eine KI-Anwendung zur Erkennung von Misinformation auf Social Media stellen, wurde die qualitative Forschungsmethode des leitfadengestützten Interviews gewählt. Personeninterviews ermöglichen es, Themen aus Sicht der Befragten zu identifizieren und diese in weiteren Analyseschritten zu vertiefen. Durch offen formulierte Fragen können individuelle Perspektiven, relevante Erfahrungen und subjektive Einschätzungen eingebracht werden, die bei standardisierten Frageformaten möglicherweise unberücksichtigt bleiben. Anstatt Themen vorzugeben, erlaubt die Interviewmethode, relevante Inhalte direkt aus den Antworten der Teilnehmenden abzuleiten und für die Bearbeitung der Forschungsfrage nutzbar zu machen.
 
-Für die Stichprobe wurden gezielt junge Erwachsene ausgewählt, die regelmäßig soziale Medien nutzen und bereits Erfahrungen mit künstlicher Intelligenz gesammelt haben. Die Interviews orientierten sich an einem thematischen Leitfaden und umfassten Fragen zu Vorerfahrungen zu KI, Nutzungsverhalten bezüglich Social Media sowie Erwartungen an eine KI-Anwendung, die über erkannte Misinformation informiert. Die Gespräche wurden über eine mobile Applikation lokal auf dem Gerät aufgezeichnet. Die Transkripte wurden zunächst mithilfe der Software @whispertranscribe2025 erstellt und anschließend von einer zweiten Person korrigiert und formal überarbeitet.
+Für die Stichprobe wurden gezielt junge Erwachsene ausgewählt, die regelmäßig soziale Medien nutzen und bereits Erfahrungen mit künstlicher Intelligenz gesammelt haben. Insbesondere sind ihnen Large Language Models wie ChatGPT bekannt und sie haben diese bereits genutzt. Die Stichprobe weist somit relevantes Vorwissen hinsichtlich der Funktionsweise sowie der Interaktionsmöglichkeiten mit KI-Systemen auf. Die Interviews orientierten sich an einem thematischen Leitfaden und umfassten Fragen zu Vorerfahrungen zu KI, Nutzungsverhalten bezüglich Social Media sowie Erwartungen an eine KI-Anwendung, die über erkannte Misinformation informiert. Insgesamt wurden zwei leitfadengestützte Interviews durchgeführt und analysiert. Die Gespräche wurden über eine mobile Applikation lokal auf dem Gerät aufgezeichnet. Die Transkripte wurden zunächst mithilfe der Software @whispertranscribe2025 erstellt und anschließend von einer zweiten Person korrigiert und formal überarbeitet.
 
 Die Auswertung erfolgte anhand der sechsstufigen thematischen Analyse. Zur Strukturierung wurde im Programm Excel von @microsoft_excel_2024 eine Tabelle angelegt, in der Codes thematisch geordnet, zu Kategorien zusammengeführt und mit exemplarischen Zitaten aus den Interviews verknüpft wurden. Die Tabelle diente zugleich als Arbeitsgrundlage zur Überprüfung, Anpassung und finalen Formulierung der Themen und Definitionen. In mehreren Korrekturschleifen wurden diese überarbeitet und zu einem gemeinsamen Analyseergebnis verdichtet.
 
@@ -59,11 +59,11 @@ Die Auswertung erfolgte anhand der sechsstufigen thematischen Analyse. Zur Struk
 
 Für die Rekrutierung der Teilnehmenden wurden insgesamt sechs Einschluss- bzw. Ausschlusskriterien definiert. Zur Sicherstellung der rechtlichen Einwilligung in die Verarbeitung personenbezogener Daten haben wir ein Mindestalter von 18 Jahren festgelegt. Eine obere Altersgrenze haben wir nicht gesetzt, um eine möglichst vielfältige Stichprobe zu ermöglichen. Ausgeschlossen wurden Personen, die aktuell an der Veranstaltung Statistik und Methoden der Nutzerforschung teilnehmen, da ihnen durch die Lehrveranstaltung potenziell Vorwissen zum Studiendesign vorliegt, sie somit nicht unvoreingenommen die Befragung bearbeiten können.Die Befragung wurde ausschließlich in deutscher Sprache durchgeführt. Entsprechend wurden nur deutschsprachige Personen als Teilnehmende gesucht, um Verständnisschwierigkeiten vermeiden. Darüber hinaus war für die Teilnahme der Zugriff Tablet, Laptop oder PC mit aktuellem Browser erforderlich, da die Online-Befragung ausschließlich für Desktop-Oberflächen konzipiert wurde und eine kompatible Anzeigeumgebung benötigt.Ein weiteres Einschlusskriterium war die zumindest gelegentliche Nutzung von sozialen Medien, da die Untersuchung auf Erfahrungen und Einschätzungen im Kontext von Social Media Bezug nehmen. Vorerfahrungen mit KI-Systemen haben wir hingegen bewusst nicht vorausgesetzt, da die KI unterstützte Anwendung kein Vorwissen benötigt. Dadurch sollte ein bereiteres Bild hinsichtlich der unterschiedlichen Technikaffinität und des Vorwissens ermöglicht werden. Die Befragung wurde im Zeitraum vom Samstag, 24. Mai 2025, bis zum Montag, 2. Juni 2025 durchgeführt. Die Rekrutierung der Teilnehmenden erfolgte sowohl mündlich im persönlichen Umfeld als auch durch die Verbreitung mittels eines Rekrutierungstextes. Es wurden so viele Teilnehmende wie möglich aus dem näheren Bekanntenumfeld gesucht mit einer Mindestgrenze von 15 Teilnehmenden. Die Befragung wurde von den Teilnehmenden eigenständig online bearbeitet.
 
-Die Studie folgte einem Mixed-Design, bestehend aus einem between-subjects- sowie einem within-subjects-Anteil. Alle Teilnehmenden führten zunächst eine Bewertung von Social Media Posts ohne Unterstützung durch KI durch (within-subjects-Design), gefolgt von einer Bewertung mit KI-Unterstützung. Die Teilnehmenden wurden randomisiert einer von zwei Varianten eines KI-Systems zugewiesen (between-subjects-Design). Die eine Häfte bewertete eine evaluierende, die andere eine empfehlende KI-Variante.
+Die Studie folgte einem mixed factorial design, mit between-subjects-Faktoren als auch within-subjects-Faktoren. Alle Teilnehmenden führten zunächst eine Bewertung von Social Media Posts ohne Unterstützung durch KI durch (within-subjects-Faktor), gefolgt von einer Bewertung mit KI-Unterstützung. Die Teilnehmenden wurden randomisiert einer von zwei Varianten eines KI-Systems zugewiesen (between-subjects-Faktor). Die eine Häfte bewertete eine evaluierende, die andere eine empfehlende KI-Variante.
 
 ------------------------------------------------------------------------
 
-![Ablauf der quantitativen Studie](Diagram1.png){#fig-ablauf-studie width="100%"}
+![Ablauf der quantitativen Studie](images/Untitled.png){#fig-ablauf-studie}
 
 Die Datenerhebung bestand aus insgesamt fünf Abschnitten (wie in @fig-ablauf-studie vollständig dargestellt): einem Pre-Test, einer Baseline-Phase, einem Post-Baseline-Fragebogen, dem Test der Anwendung und einem abschleißenden Post-Test-Fragebogen. Im Pre-Test wurden grundlegende demografische Daten erfasst, darunter das Alter der Teilnehmenden (metrisch), das Geschlecht (nominalskaliert: männlich, weiblich, divers) sowie der Bildungsstand (ordinalskaliert mit mehreren Bildungsstufen). Zusätzlich wurden Angaben zur Technikaffinität (metrisch), zur Nutzung sozialer Medien (teils ordinal und teils nominal) sowie zum Vorwissen über KI (metrisch) erfasst. Im Hauptteil der Studie mussten die Teilnehmenden 20 Social-Media-Beiträge bewerten, die potentiell Falschinformationen enthielten. Die Beiträge waren in zwei Phasen aufgeteilt: In der ersten Phase (Baseline) wurden zehn Beiträge ohne Unterstützung durch ein KI-System bewertet. In der zweiten Phase (Test der Anwendung) erfolgte die Bewertung von zehn weiteren Beiträgen, hier mit Unterstützung durch eines von zwei KI-Systemen: entweder ein evaluatives System, das eine eigene Einschätzung abgibt, oder ein empfehlendes System, das eine Handlungsempfehlung formuliert. Die Zuordnung der KI-Systeme erfolgte zwischen den Teilnehmenden randomisiert. Zu jedem Beitrag sollten die Teilnehmenden einschätzen, ob es sich um Falschinformationen handelt (ja/nein). Diese Einschätzung wurde binär erfasst (nominalskaliert). Parallel wurde erfasst, unter welcher Systembedingung der jeweilige Beitrag präsentiert wurde: entweder ohne Assistenz (Baseline), mit einer evaluativen Entscheidungshilfe oder mit einer direkten Empfehlung. Nach jeder der beiden Bewertungsphasenwurde ein Post-Test durchgeführt, in dem die subjektiv empfundene mentale Belastung abgefragt wurde. Dafür kam hier eine Skala zum Einsatz, die sich an der DLR-Workload-Skala orientiert. Diese Skala misst fünf Bereiche der mentalen Beanspruchung: Informationsaufnahme, Wissensabruf, Entscheidungsfindung, motorische Beanspruchung und zeitlicher Druck. Jeder Bereich wurde einzeln auf einer visuellen Analogskala von 0 (sehr stark unterbeansprucht) bis 200 (sehr stark überbeansprucht) bewertet, wobei 100 als optimaler Wert gilt. Die Teilnehmenden konnten somit sehr differenziert angeben, wie belastend sie die Aufgaben empfanden. Die DLR-Skala gilt als ökonomisch, da sie trotz weniger Fragen eine differenzierte Erfassung ermöglicht. Die binäre Entscheidung bei den Beiträgen (ja/nein) ist angemessen für unser Ziel, um herauszufinden, wie sicher und richtig Teilnehmende Falschinformationen erkennen. Insgesamt liefert der Studiendesign sowohl objektive Daten (Entscheidung pro Beitrag), als auch subjektive Einschätzungen (über die Belastung). Damit lässt sich analysieren, ob und wie die KI-Systeme einen Einfluss auf das Erkennen von Desinformation haben.
 
@@ -72,8 +72,6 @@ Zur Analyse der erhobenen Daten sind zwei zentrale statistische Verfahren geplan
 ## Ergebnisse
 
 ### Qualitative Ergebnisse
-
-Insgesamt wurden zwei leitfadengestützte Interviews durchgeführt und analysiert. Die interviewten Personen sind junge Erwachsene, die soziale Medien aktiv und regelmäßig in ihrem Alltag nutzen. Zudem verfügen sie über Vorkenntnisse im Bereich künstlicher Intelligenz, insbesondere sind ihnen Large Language Models wie ChatGPT bekannt und sie haben diese bereits genutzt. Die Stichprobe weist somit relevantes Vorwissen hinsichtlich der Funktionsweise sowie der Interaktionsmöglichkeiten mit KI-Systemen auf.
 
 Im Rahmen der Interviews konnten mehrere thematische Schwerpunkte identifiziert werden, die von den Befragten als zentrale Anforderungen an eine KI-Anwendung zur Erkennung von Misinformation auf Social Media formuliert wurden.
 
@@ -95,13 +93,13 @@ Wie Table 1 zu entnehmen ist, konnten sieben zentrale Anforderungsbereiche ident
 
 #### Stichprobe
 
-Der Datensatz für die Analyse wurde vor einem Team vorgefiltert, eine zusätzliche Filterung oder Ausschlusskriterien nach Datenerhebung war nicht erforderlich. Es wurden N = 176 Teilnehmenden in die folgenden Analyse berrücksichtigt Die Stichprobe verteilte sich nahezu gleichmäßig: 89 Personen bearbeiteten die Aufgabe mit einer empfehlenden KI-Variante, während 87 Teilnehmende mit einer evaluativen Variante arbeiteten. Alle Teilnehmenden durchliefen eine Phase ohne und eine Phase mit KI-Unterstützung. Das Alter wurde metrisch erhoben. Das Durchschnittsalter betrug M = 25,9 (Mdn = 22, SD = 10,6). Eine obere Altersgrenze wurde nicht gesetzt, um eine möglichst diverse Stichprobe zu gewährleisten. Das Geschlecht wurde nominalskaliert erfasst (männlich, weiblich, divers). 90 Teilnehmende identifizierten sich als weiblich, 84 als männlich und 2 als non-binär. Auf die Frage nach der Vorerfahrung im Umgang mit Künstlicher Intelligenz (metrisch) stuften 9 Teilnehmende diese als sehr hoch ein, während zehn Personen angaben, über sehr geringe Vorerfahrung zu verfügen. Die Mehrheit von 85 Teilnehmenden bewertete ihre Vorerfahrung als mittelmäßig.
+Der Datensatz für die Analyse wurde vor einem Team vorgefiltert, eine zusätzliche Filterung oder Ausschlusskriterien nach Datenerhebung war nicht erforderlich. Es wurden *N* = 176 Teilnehmenden in die folgenden Analyse berrücksichtigt Die Stichprobe verteilte sich nahezu gleichmäßig: 89 Personen bearbeiteten die Aufgabe mit einer empfehlenden KI-Variante, während 87 Teilnehmende mit einer evaluativen Variante arbeiteten. Alle Teilnehmenden durchliefen eine Phase ohne und eine Phase mit KI-Unterstützung. Das Alter wurde metrisch erhoben. Das Durchschnittsalter betrug *M* = 25,9 (*Mdn* = 22, *SD* = 10,6). Eine obere Altersgrenze wurde nicht gesetzt, um eine möglichst diverse Stichprobe zu gewährleisten. So liegt das Alter der Teilnehmenden zwischen 18 und 69 Jahren. Das Geschlecht wurde nominalskaliert erfasst (männlich, weiblich, divers). 90 Teilnehmende identifizierten sich als weiblich, 84 als männlich und 2 als non-binär. Auf die Frage nach der Vorerfahrung im Umgang mit Künstlicher Intelligenz (metrisch) stuften 9 Teilnehmende diese als sehr hoch ein, während zehn Personen angaben, über sehr geringe Vorerfahrung zu verfügen. Die Mehrheit von 85 Teilnehmenden bewertete ihre Vorerfahrung als mittelmäßig.
 
 #### Deskriptive Statistik
 
 Zur quantitativen Auswertung der Studie wurden zwei abhängige Variablen betrachtet: die subjektive mentale Belastung sowie das Vertrauen in das verwendete KI-System. Die mentale Belastung wurde mithilfe der DLR-Workload-Skala (@dlr119443) nach der Nutzung der jeweiligen KI-Anwendung erfasst. Die Erhebung erfolgte über eine visuelle Analogskala im Bereich von 0 bis 200 Punkten. Das Vertrauen in das System wurde anhand eines Einzelitems auf einer 5-Punkte-Likert-Skala gemessen (1 = sehr geringes Vertrauen, 5 = sehr hohes Vertrauen) nach @Mandsen_Gregor.
 
-@tbl-belastung zeigt die deskriptiven Statistiken beider Variablen. Die mentale Belastung weist bei *N* = 176 einen Mittelwert von *M* = 105.90 (SD = 22.63) auf, bei einem Wertebereich von 44.38 bis 178.13. Dies deutet auf eine mittlere bis leicht erhöhte Beanspruchung hin. Das Vertrauen in das KI-System lag im Mittel bei *M* = 3.35 (SD = 0.93) und spiegelt somit eine eher neutrale bis tendenziell positive Haltung gegenüber der KI-Anwendung wider. Zur differenzierten Betrachtung der mentalen Belastung nach Interaktionstyp wurde zusätzlich eine Gruppierung nach KI-Typ vorgenommen (evaluativ vs. empfehlend). Dies wurde in @tbl-belastung zusammengefasst.
+@tbl-belastung zeigt die deskriptiven Statistiken beider Variablen. Die mentale Belastung weist bei *N* = 176 einen Mittelwert von *M* = 105.90 (SD = 22.63) auf, bei einem Wertebereich von 44.38 bis 178.13. Dies deutet auf eine mittlere bis leicht erhöhte Beanspruchung hin. Das Vertrauen in das KI-System lag im Mittel bei *M* = 3.35 (*SD* = 0.93) und spiegelt somit eine eher neutrale bis tendenziell positive Haltung gegenüber der KI-Anwendung wider. Zur differenzierten Betrachtung der mentalen Belastung nach Interaktionstyp wurde zusätzlich eine Gruppierung nach KI-Typ vorgenommen (evaluativ vs. empfehlend). Dies wurde in @tbl-belastung zusammengefasst.
 
 ```{r}
 #| label: setup
@@ -116,6 +114,7 @@ library(psych)
 library(knitr)
 library(kableExtra)
 library(ggplot2)
+
 
 # Daten einlesen
 data <- read.csv("data_combined.csv", stringsAsFactors = FALSE)
@@ -139,12 +138,12 @@ data_grouped <- data %>%
 desc_stats_grouped <- data_grouped %>%
   group_by(group) %>%
   summarise(
-    n = sum(!is.na(DLR_KI)),
-    mean = mean(DLR_KI, na.rm = TRUE),
-    median = median(DLR_KI, na.rm = TRUE),
-    sd = sd(DLR_KI, na.rm = TRUE),
-    min = min(DLR_KI, na.rm = TRUE),
-    max = max(DLR_KI, na.rm = TRUE),
+    Stichprobenumfang = sum(!is.na(DLR_KI)),
+    Mittelwert = mean(DLR_KI, na.rm = TRUE),
+    Median = median(DLR_KI, na.rm = TRUE),
+    Standardabweichung = sd(DLR_KI, na.rm = TRUE),
+    Minimum = min(DLR_KI, na.rm = TRUE),
+    Maximum = max(DLR_KI, na.rm = TRUE),
     .groups = "drop"
   )
 
@@ -184,13 +183,13 @@ alpha_ki <- psych::alpha(data[, ki_items], check.keys = TRUE)$total$raw_alpha
 # Zusammenfassung 
 summary_table <- data.frame(
   Variable = c("Mentale Belastung", "Vertrauen"),
-  n = c(sum(!is.na(data$DLR_KI)), sum(!is.na(data$Trust))),
-  mean = c(mean(data$DLR_KI, na.rm = TRUE), mean(data$Trust, na.rm = TRUE)),
-  median = c(median(data$DLR_KI, na.rm = TRUE), median(data$Trust, na.rm = TRUE)),
-  sd = c(sd(data$DLR_KI, na.rm = TRUE), sd(data$Trust, na.rm = TRUE)),
-  min = c(min(data$DLR_KI, na.rm = TRUE), min(data$Trust, na.rm = TRUE)),
-  max = c(max(data$DLR_KI, na.rm = TRUE), max(data$Trust, na.rm = TRUE)),
-  alpha = c(round(alpha_ki, 3),"-")
+  Stichprobenumfang = c(sum(!is.na(data$DLR_KI)), sum(!is.na(data$Trust))),
+  Mittelwert = c(mean(data$DLR_KI, na.rm = TRUE), mean(data$Trust, na.rm = TRUE)),
+  Median = c(median(data$DLR_KI, na.rm = TRUE), median(data$Trust, na.rm = TRUE)),
+  Standardabweichung = c(sd(data$DLR_KI, na.rm = TRUE), sd(data$Trust, na.rm = TRUE)),
+  Minimum = c(min(data$DLR_KI, na.rm = TRUE), min(data$Trust, na.rm = TRUE)),
+  Maximum = c(max(data$DLR_KI, na.rm = TRUE), max(data$Trust, na.rm = TRUE)),
+  Cronbachs_Alpha  = c(round(alpha_ki, 3),"-")
 )
 
 #| label: tbl-belastung-vertrauen
@@ -203,7 +202,7 @@ kable(summary_table, caption = "Deskriptive Statistik für mentale Belastung und
 
 #### Inferenzstatistik
 
-Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „Empfehlend“ (M = 104,85, SD = 20,31) und der Bedingung „Evaluativ“ (M = 106,97, SD = 20,87), *t*(173,63) = -0,62, *p* = .536. Die Effektstärke entspricht nach Cohen (1988) einem kleinen Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot @fig-belastung-plot veranschaulicht.
+Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „Empfehlend“ (*M* = 104,85, *SD* = 20,31) und der Bedingung „Evaluativ“ (*M* = 106,97, *SD* = 20,87), *t*(173,63) = -0,62, *p* = .536. Die Effektstärke entspricht nach Cohen (1988) einem kleinen Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot @fig-belastung-plot veranschaulicht.
 
 ```{r}
 #| echo: false
@@ -245,7 +244,7 @@ ggplot(plot_data, aes(x = group, y = mean)) +
 
 ```
 
-Zudem wurde eine Korrelationsanalyse nach Pearson durchgeführt, um den Zusammenhang zwischen der subjektiv empfundenen mentalen Belastung und dem Vertrauen in das KI-System zu untersuchen. Die Analyse ergab eine signifikante negative Korrelation (r(174) = -0.23, p \< .002), was darauf hinweist, dass eine höhere empfundene kognitive Belastung mit einem tendenziell niedrigeren Vertrauen in das System einhergeht. Diese Beziehung wird in @fig-korrelation-belastung-vertrauen, dem Scatter-Plot mit Regressionslinie, grafisch dargestellt. Die Punktwolke zeigt eine leichte negative Tendenz, unterstützt durch die eingefügte Regressionslinie.
+Zudem wurde eine Korrelationsanalyse nach Pearson durchgeführt, um den Zusammenhang zwischen der subjektiv empfundenen mentalen Belastung und dem Vertrauen in das KI-System zu untersuchen. Die Analyse ergab eine signifikante negative Korrelation (*r*(174) = -0.23, *p* \< .002), was darauf hinweist, dass eine höhere empfundene kognitive Belastung mit einem tendenziell niedrigeren Vertrauen in das System einhergeht. Diese Beziehung wird in @fig-korrelation-belastung-vertrauen, dem Scatter-Plot mit Regressionslinie, grafisch dargestellt. Die Punktwolke zeigt eine leichte negative Tendenz, unterstützt durch die eingefügte Regressionslinie.
 
 ```{r}
 #| echo: false
