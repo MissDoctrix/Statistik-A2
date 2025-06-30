@@ -202,7 +202,7 @@ kable(summary_table, caption = "Deskriptive Statistik für mentale Belastung und
 
 #### Inferenzstatistik
 
-Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „Empfehlend“ (*M* = 104,85, *SD* = 20,31) und der Bedingung „Evaluativ“ (*M* = 106,97, *SD* = 20,87), *t*(173,63) = -0,62, *p* = .536. Die Effektstärke entspricht nach Cohen (1988) einem kleinen Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot @fig-belastung-plot veranschaulicht.
+Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „Empfehlend“ (*M* = 104,85, *SD* = 20,31) und der Bedingung „Evaluativ“ (*M* = 106,97, *SD* = 20,87), *t*(173,63) = -0,62, *p* = .536 und *d* = 0,09. Die Effektstärke entspricht nach Cohen (1988) keinem Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot @fig-belastung-plot veranschaulicht.
 
 ```{r}
 #| echo: false
