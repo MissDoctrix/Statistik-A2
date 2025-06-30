@@ -202,7 +202,7 @@ kable(summary_table, caption = "Deskriptive Statistik für mentale Belastung und
 
 #### Inferenzstatistik
 
-Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „Empfehlend“ (*M* = 104,85, *SD* = 20,31) und der Bedingung „Evaluativ“ (*M* = 106,97, *SD* = 20,87), *t*(173,63) = -0,62, *p* = .536 und *d* = 0,09. Die Effektstärke entspricht nach Cohen (1988) keinem Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot @fig-belastung-plot veranschaulicht.
+Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „Empfehlend“ (*M* = 104,85, *SD* = 20,31) und der Bedingung „Evaluativ“ (*M* = 106,97, *SD* = 20,87), *t*(173,63) = -0,62, *p* = .536 und *d* = 0.09. Die Effektstärke entspricht nach Cohen (1988) keinem Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot @fig-belastung-plot veranschaulicht.
 
 ```{r}
 #| echo: false
@@ -244,7 +244,7 @@ ggplot(plot_data, aes(x = group, y = mean)) +
 
 ```
 
-Zudem wurde eine Korrelationsanalyse nach Pearson durchgeführt, um den Zusammenhang zwischen der subjektiv empfundenen mentalen Belastung und dem Vertrauen in das KI-System zu untersuchen. Die Analyse ergab eine signifikante negative Korrelation (*r*(174) = -0.23, *p* \< .002), was darauf hinweist, dass eine höhere empfundene kognitive Belastung mit einem tendenziell niedrigeren Vertrauen in das System einhergeht. Diese Beziehung wird in @fig-korrelation-belastung-vertrauen, dem Scatter-Plot mit Regressionslinie, grafisch dargestellt. Die Punktwolke zeigt eine leichte negative Tendenz, unterstützt durch die eingefügte Regressionslinie.
+Zudem wurde eine Korrelationsanalyse nach Pearson durchgeführt, um den Zusammenhang zwischen der subjektiv empfundenen mentalen Belastung und dem Vertrauen in das KI-System zu untersuchen. Die Analyse ergab eine signifikante negative Korrelation (*r*(174) = -0.23, *p* \< .002). Dieser Wert für Persons's R entspricht nach @bourier_zusammenhang_2025 einer kleinen Effektstärke. Demnach geht eine höhere empfundene kognitive Belastung mit einem tendenziell niedrigeren Vertrauen in das System einher. Diese Beziehung wird in @fig-korrelation-belastung-vertrauen, dem Scatter-Plot mit Regressionslinie, grafisch dargestellt. Die Punktwolke zeigt eine leichte negative Tendenz, unterstützt durch die eingefügte Regressionslinie.
 
 ```{r}
 #| echo: false
