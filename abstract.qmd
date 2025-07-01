@@ -29,7 +29,59 @@ csl: apa7.csl
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
 **Für die Abgabe aktueller GitHub Hash:** 2b414e8d0478ee4c6328d2f6641749a22a015246
 
+to Do:
+
+-   Einleitung
+
+-   Diskussion
+
+-   Begrifflichkeiten Anpassen (Social Media/Soziale Medien, Fake News, Desinformtaion, Misinformation, KI/AI)
+
+-   textliche Verknüpfung und Stilanpassung
+
+-   Rückmeldung aus Methodenteil ("das fehtl was: von = 0,05 und bei Angabe von p keine führende 0 vorm Komma, weil p max. 1 sein kann")
+
+-   Rückmeldung Ergebnisse (dynamische Referenzierung, Scatterplot (?), ATI Stichprobe)
+
+-   Abschlusspräsentation
+
+-   Titel wählen
+
 ## Einleitung
+
+Kontext der Forschungsfrage
+
+-   Nutzung Social Media Bevölkerung
+
+-   Relevanz von Disinformation (Vorkommen und Auswirkung)
+
+-   Möglichkeit, Disinformtion zu detektieren mittels KI (und Erfolg davon)
+
+-   KI Vorwissen, Umgang damit (Skepsis vs. Vertrauen, Interpretierbarkeit)
+
+Warum ist Forschungsfrage wichtig?
+
+-   da Desinformation wichtiges Thema und es vielversprechende Detektion gibt, muss betrachtet werden, wie Menschen mit KI-Detektion interagieren, d.h. wie das Tool für Menschen nutzbar gemacht werden kann und als solches empfunden wird (Ohne Verständnis und Vertrauen halt auch sinnlos, ne)
+
+-   KI Tools bestehen, aber menschliche Wahrnehmung (Interkation) und Bedürfnisse (Anforderungen) an Gestaltung (konzeptionell und Oberfläche) wenig erforscht (wissenslücke)
+
+-   Wissensbasis für theoretische Vorüberlegungen, um praktische Gestaltung Basis zugeben. Nicht nur für ein spezifisches Tool, sondern Wissenbasis für Verwanndte Projekte und Themenlagen (da KI immer präsenter eh wichtig)
+
+Welches Ziel verfolgt Forschungsfrage?
+
+-   Ziel: Faktoren herausfinden, die eine erfolgreiche Benutzung von KI-Detektion bedingen, um das Tool für Menschen nutzbarer zu machen
+
+    -   erfolgreich in mehreren Dimensionen: Verständnis, wie man Tool nutzen kann (bedienung, aussagekraft, hinterfragen), Transparenz und Vertrauen, möglichst wenig Stress durch KI Tool
+
+-   konkrete Fragestellung/Hypothese hier
+
+-   Zur Beantwortung dieser Frage verwenden wir sowohl quantitative als auch qualitative Methoden, einschließlich Umfragen und Interviews
+
+Vorgehen, um Ziel zu erreichen?
+
+-   Das Paper ist in folgende Hauptabschnitte gegliedert: Einleitung, Literaturübersicht, Methodik, Ergebnisse, Diskussion und Fazit. Die Einleitung führt in das Thema ein und stellt die Relevanz und Zielsetzung dar. Die Literaturübersicht fasst bestehende Studien und Theorien zusammen und identifiziert Forschungslücken. Im Methodikteil...
+
+-   Methodik vrogehen für Leitfadeninterviews und Methodik mixed Design Umfrage, dann Ergebnisse, auswertung Inhalte Interviews und t-Test wie Korrelationsanalyse (ggf. mit Frage?), Schluss Diskussion der Erkenntnisse und Begrenzung, code of Conduct, Literatur und Anhang mit Text für Interviews
 
 ## Literaturübersicht
 
@@ -270,7 +322,43 @@ cor_test <- cor.test(data$DLR_KI, data$Trust, method = "pearson")
 
 Zusammenfassend lässt sich festhalten, dass sich die beiden getesteten KI-Systeme in ihrer Auswirkung auf die mentale Belastung nicht signifikant voneinander unterschieden. Beide Varianten führten zu vergleichbaren Belastungswerten, was darauf hinweist, dass der eingesetzte KI-Typ – evaluativ oder empfehlend – keinen entscheidenden Einfluss auf das subjektive Belastungsempfinden hatte. Allerdings zeigte sich ein relevanter Zusammenhang zwischen der empfundenen mentalen Belastung und dem Vertrauen in das System: Teilnehmende, die das System als stärker belastend wahrnahmen, berichteten tendenziell ein geringeres Vertrauen in die KI. Diese Ergebnisse sind insbesondere für die nutzerzentrierte Gestaltung von KI-Anwendungen bedeutsam, da sie nahelegen, dass eine wahrgenommene kognitive Entlastung das Vertrauen der Nutzenden in ein KI-System fördern kann.
 
-### Diskussion
+## Diskussion
+
+-   Beantwortung der Forschungsfrage(n).
+
+<!-- -->
+
+-   Wissenschaftliche/gesellschaftliche Implikationen.
+
+-   Limitationen der Studie.
+
+-   Zukünftige Arbeit.
+
+    💡 Der Abschnitt „Diskussion“ dient der Interpretation der Ergebnisse.
+
+Was bedeuten die Ergebnisse in Bezug auf die Forschungsfrage(n)?
+
+-   kurze Zusammenfassung der Studie, jeweils ein bis zwei Sätze zu (Ziel, Methode, Ergebnisse) (ausführlicher, sodass auch verstanden werden kann, wenn der Rest des extended Abstracts nicht gelesen wurde)
+
+-   explizite Antwort der Forschungsfrage (super für Rückgriff)
+
+Was lässt sich aus der Studie schlussfolgern (Wissenschaft/Gesellschaft)?
+
+-   Auwirkung auf Wissenschaft (Widersprüche (gründe?), Erweiterung, Nutzungsmöglichkeit)
+
+-   erklären Ergebnisse Phänomene/menschliches Verhalten in bestimmten Situationen?
+
+-   unterstützend für Implementierung von Gesetzen/Richtlinien?
+
+-   z.B. Ergebnisse legen nahe, dass bestimmte Features Mehrwert für Weiterentwicklung von KI-Tools zur Detektion von Desinformation...
+
+Was sind die Einschränkungen der Studie?
+
+-   Zu beachten ist, dass die Stichprobe nicht repräsentativ war, da an einer Universität über einen E-Mail-Verteiler rekrutiert worden ist. Insofern handelt es sich womöglich um eine selbst-selektierte Stichprobe, die mehr Interesse an Nachhaltigkeit als die allgemeine Population in Deutschland ... siehe Studierende ähnlicher Kohorte, Technik schwerpunkt, nicht repäsentativ für allgemeine Population (dazu Websiten unspezifisch, einbindung in Kontext noch mal speziellere Anforderungen, hier soweit Grundlagenuntersuchung, nicht konkreter Kontext)
+
+-   Zeitpunkt, politisch Desinformation und großer Boom wie Skepsis KI?
+
+Was sind, auf Basis der Implikationen und Limitationen, sinnvolle Folgestudien?
 
 ## Code of Conduct {.unnumbered}
 
