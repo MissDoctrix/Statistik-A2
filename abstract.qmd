@@ -35,18 +35,6 @@ to Do:
 
 -   textliche Verknüpfung und Stilanpassung
 
--   Rückmeldung Ergebnisse (dynamische Referenzierung, Scatterplot (?),)
-
--   Abschlusspräsentation
-
-    -   Einleitung, inkl. Einführung, Relevanz und Zielsetzung, 3min (done)
-
-    -   Methodik, inkl. Arten der Erhebungen und Auswertungsstrategie, 1,5min
-
-    -   Ergebnisse (qual. + quant.) inkl. Diskussion der Implika onen und Relevanz, 7,5min
-
-    -   Diskussion der Limitationen und möglicher zukünftiger Arbeiten, 3min
-
 ## Einleitung
 
 Misinformationen auf Social Media stellen eine wachsende Herausforderung für Nutzende dar. Im Jahr 2024 nutzten laut der ARD/ZDF-Medienstudie etwa 60 % der deutschen Bevölkerung ab 14 Jahren soziale Netzwerke (@müller2024). Diese Plattformen dienen zunehmend als Informationsquellen, wobei es für die Nutzende schwierig ist, falsche oder irreführende Inhalte zu erkennen. Derartige Inhalte können gesellschaftliche Spannungen verschärfen und politische sowie wirtschaftliche Prozesse beeinflussen (@gesing_desinformation_2024). Spätestens seit dem US-amerikanischen Präsidentschaftswahlkampf im Jahr 2016 gilt die gezielte Verbreitung von Falschinformationen über Social Media als strategisches Mittel zur Meinungsbeeinflussung (@rudloff_fake_2023).
@@ -101,7 +89,7 @@ Die Studie folgte einem mixed factorial design, mit between-subjects-Faktoren al
 
 Die Datenerhebung bestand aus insgesamt fünf Abschnitten (wie in @fig-ablauf-studie vollständig dargestellt): einem Pre-Test, einer Baseline-Phase, einem Post-Baseline-Fragebogen, dem Test der Anwendung und einem abschleißenden Post-Test-Fragebogen. Im Pre-Test wurden grundlegende demografische Daten erfasst, darunter das Alter der Teilnehmenden (metrisch), das Geschlecht (nominalskaliert: männlich, weiblich, divers) sowie der Bildungsstand (ordinalskaliert mit mehreren Bildungsstufen). Zusätzlich wurden Angaben zur Technikaffinität (metrisch), zur Nutzung von Social Media (teils ordinal und teils nominal) sowie zum Vorwissen über KI (metrisch) erfasst. Im Hauptteil der Studie mussten die Teilnehmenden 20 Social-Media-Beiträge bewerten, die potentiell Falschinformationen enthielten. Die Beiträge waren in zwei Phasen aufgeteilt: In der ersten Phase (Baseline) wurden zehn Beiträge ohne Unterstützung durch ein KI-System bewertet. In der zweiten Phase (Test der Anwendung) erfolgte die Bewertung von zehn weiteren Beiträgen, hier mit Unterstützung durch eines von zwei KI-Systemen: entweder ein evaluatives System, das eine eigene Einschätzung abgibt, oder ein empfehlendes System, das eine Handlungsempfehlung formuliert. Die Zuordnung der KI-Systeme erfolgte zwischen den Teilnehmenden randomisiert. Zu jedem Beitrag sollten die Teilnehmenden einschätzen, ob es sich um Falschinformationen handelt (ja/nein). Diese Einschätzung wurde binär erfasst (nominalskaliert). Parallel wurde erfasst, unter welcher Systembedingung der jeweilige Beitrag präsentiert wurde: entweder ohne Assistenz (Baseline), mit einer evaluativen Entscheidungshilfe oder mit einer direkten Empfehlung. Nach jeder der beiden Bewertungsphasenwurde ein Post-Test durchgeführt, in dem die subjektiv empfundene mentale Belastung abgefragt wurde. Dafür kam hier eine Skala zum Einsatz, die sich an der DLR-Workload-Skala orientiert. Diese Skala misst fünf Bereiche der mentalen Beanspruchung: Informationsaufnahme, Wissensabruf, Entscheidungsfindung, motorische Beanspruchung und zeitlicher Druck. Jeder Bereich wurde einzeln auf einer visuellen Analogskala von 0 (sehr stark unterbeansprucht) bis 200 (sehr stark überbeansprucht) bewertet, wobei 100 als optimaler Wert gilt. Die Teilnehmenden konnten somit sehr differenziert angeben, wie belastend sie die Aufgaben empfanden. Die DLR-Skala gilt als ökonomisch, da sie trotz weniger Fragen eine differenzierte Erfassung ermöglicht. Die binäre Entscheidung bei den Beiträgen (ja/nein) ist angemessen für unser Ziel, um herauszufinden, wie sicher und richtig Teilnehmende Falschinformationen erkennen. Insgesamt liefert der Studiendesign sowohl objektive Daten (Entscheidung pro Beitrag), als auch subjektive Einschätzungen (über die Belastung). Damit lässt sich analysieren, ob und wie die KI-Systeme einen Einfluss auf das Erkennen von Misinformation haben.
 
-Zur Analyse der erhobenen Daten sind zwei zentrale statistische Verfahren geplant: Ein t-Test für unabhängige Stichproben sowie eine Korrelationsanalyse nach Pearson. Dadurch können sowohl Gruppenunterschiede als auch die Zusammenhänge zwischen ausgewählten Variablen untersucht werden. Zunächst wird zur Untersuchung von Gruppenunterschieden ein t-Test für unabhängige Stichproben eingesetzt. Dieser Test prüft, ob sich die mittlere subjektive Belastung (erhoben mit der DLR Workload-Skala nach @dlr119443) in Abhängigkeit von der Art der KI-Unterstützung (evaluativ vs. empfehlend) signifikant unterscheidet. Die Belastung wird dabei als metrisch skalierte Variable behandelt, da sie auf einer visuellen Analogskala von 0 bis 200 erhoben wurde. Die Gruppenzuordnung (Art der KI) ist nominalskaliert, weshalb sich der t-Test als geeignete Methode zur Prüfung dieser Hypothese anbietet. Das Ziel dieser Analyse ist es herauszufinden, ob eine bestimmte Form der KI-Assistenz kognitiv entlastender wirkt als die andere, was für die Gestaltung zukünftiger Systeme relevant sein könnte. Ergänzend dazu wird eine Korrelation nach Pearson durchgeführt, um mögliche Zusammenhänge zwischen der subjektiv empfundenen Belastung und dem Vertrauen in das KI-System zu untersuchen. Das Vertrauen wurde im Post-Test mit Hilfe mehreren Aussagen auf einer metrisch interpretierten Likert-Skala erfasst (@Mandsen_Gregor). Da beide Variablen (subjektive Belastung und Vertrauen) als intervallskaliert gelten, ist der Pearson-Korrelationskoeffizient eine geeignete Methode zur Analyse. Diese Analyse soll zeigen, ob beispielsweise eine höhere Belastung mit einem niedrigeren Vertrauen in das System einhergeht. Für beide Analysen wird ein Signifikanzniveau von 5% (α = 0.05) festgelegt.
+Zur Analyse der erhobenen Daten sind zwei zentrale statistische Verfahren geplant: Ein t-Test für unabhängige Stichproben sowie eine Korrelationsanalyse nach Pearson. Dadurch können sowohl Gruppenunterschiede als auch die Zusammenhänge zwischen ausgewählten Variablen untersucht werden. Zunächst wird zur Untersuchung von Gruppenunterschieden ein t-Test für unabhängige Stichproben eingesetzt. Dieser Test prüft, ob sich die mittlere subjektive Belastung (erhoben mit der DLR Workload-Skala nach @dlr119443) in Abhängigkeit von der Art der KI-Unterstützung (evaluativ vs. empfehlend) signifikant unterscheidet. Die Belastung wird dabei als metrisch skalierte Variable behandelt, da sie auf einer visuellen Analogskala von 0 bis 200 erhoben wurde. Die Gruppenzuordnung (Art der KI) ist nominalskaliert, weshalb sich der t-Test als geeignete Methode zur Prüfung dieser Hypothese anbietet. Das Ziel dieser Analyse ist es herauszufinden, ob eine bestimmte Form der KI-Assistenz kognitiv entlastender wirkt als die andere, was für die Gestaltung zukünftiger Systeme relevant sein könnte. Ergänzend dazu wird eine Korrelation nach Pearson durchgeführt, um mögliche Zusammenhänge zwischen der subjektiv empfundenen Belastung und dem Vertrauen in das KI-System zu untersuchen. Das Vertrauen wurde im Post-Test mit Hilfe mehreren Aussagen auf einer metrisch interpretierten Likert-Skala im Rahmen der Human-Computer-Trust-Skala von @Mandsen_Gregor erfasst. Da beide Variablen (subjektive Belastung und Vertrauen) als intervallskaliert gelten, ist der Pearson-Korrelationskoeffizient eine geeignete Methode zur Analyse. Diese Analyse soll zeigen, ob beispielsweise eine höhere Belastung mit einem niedrigeren Vertrauen in das System einhergeht. Für beide Analysen wird ein Signifikanzniveau von 5% (α = 0.05) festgelegt.
 
 ## Ergebnisse
 
@@ -129,13 +117,13 @@ Wie Table 1 zu entnehmen ist, konnten sieben zentrale Anforderungsbereiche ident
 
 Der Datensatz für die Analyse wurde vor einem Team vorgefiltert, eine zusätzliche Filterung oder Ausschlusskriterien nach Datenerhebung war nicht erforderlich. Es wurden *N* = 176 Teilnehmenden in die folgenden Analyse berrücksichtigt Die Stichprobe verteilte sich nahezu gleichmäßig: 89 Personen bearbeiteten die Aufgabe mit einer empfehlenden KI-Variante, während 87 Teilnehmende mit einer evaluativen Variante arbeiteten. Alle Teilnehmenden durchliefen eine Phase ohne und eine Phase mit KI-Unterstützung. Das Alter wurde metrisch erhoben. Das Durchschnittsalter betrug *M* = 25,9 (*Mdn* = 22, *SD* = 10,6). Eine obere Altersgrenze wurde nicht gesetzt, um eine möglichst diverse Stichprobe zu gewährleisten. So liegt das Alter der Teilnehmenden zwischen 18 und 69 Jahren. Das Geschlecht wurde nominalskaliert erfasst (männlich, weiblich, divers). 90 Teilnehmende identifizierten sich als weiblich, 84 als männlich und zwei als non-binär. Auf die Frage nach der Vorerfahrung im Umgang mit Künstlicher Intelligenz (metrisch) stuften neun Teilnehmende diese als sehr hoch ein, 47 als eher hoch, während zehn Personen angaben, über sehr geringe Vorerfahrung zu verfügen und 25 über eher geringe Vorerfahrung. Die Mehrheit von 85 Teilnehmenden bewertete ihre Vorerfahrung als mittelmäßig.
 
-Die Technikaffinität der Stichprobe wurde anhand der ATI-Skala (Fragebogen zur Affinität gegenüber Technikinteraktion, @franke2019ati) erhoben. Die interne Konsistenz der Skala ergab einen Wert für Cronbach’s Alpha von α = 0.91, was auf eine sehr hohe interne Konsistenz der Skala hinweist. Die Itemanalyse ergab, dass fast alle Items zu einer hohen Reliabilität beitrugen. Nur das Item ati_3 zeigte mit eine vergleichsweise geringe Trennschärfe, doch würde der Alpha-Wert bei Entfernung dieses Items nur geringfügig auf 0.92 steigen. Da der Gesamtwert jedoch bereits sehr hoch ist und das Item theoretisch relevant erscheint, wurde entschieden, ati_3 ("In erster Linie beschäftige ich mich mit technischen Systemen, weil ich muss.") in der Skala zu belassen. Der durchschnittliche Skalenwert lag bei *M* = 3.7 (*SD* = 0.58), was auf eine insgesamt moderate Technikaffinität der Teilnehmenden hinweist.
+Die Technikaffinität der Stichprobe wurde anhand der ATI-Skala (Fragebogen zur Affinität gegenüber Technikinteraktion, @franke2019ati) erhoben. Die interne Konsistenz der Skala ergab einen Wert für Cronbach’s Alpha von α = .91, was auf eine sehr hohe interne Konsistenz der Skala hinweist. Die Itemanalyse ergab, dass fast alle Items zu einer hohen Reliabilität beitrugen. Nur das Item ati_3 zeigte mit eine vergleichsweise geringe Trennschärfe, doch würde der Alpha-Wert bei Entfernung dieses Items nur geringfügig auf .92 steigen. Da der Gesamtwert jedoch bereits sehr hoch ist und das Item theoretisch relevant erscheint, wurde entschieden, ati_3 ("In erster Linie beschäftige ich mich mit technischen Systemen, weil ich muss.") in der Skala zu belassen. Der durchschnittliche Skalenwert lag bei *M* = 3.7 (*SD* = 0.6), was auf eine insgesamt moderate Technikaffinität der Teilnehmenden hinweist.
 
 #### Deskriptive Statistik
 
-Zur quantitativen Auswertung der Studie wurden zwei abhängige Variablen betrachtet: die subjektive mentale Belastung sowie das Vertrauen in das verwendete KI-System. Die mentale Belastung wurde mithilfe der DLR-Workload-Skala (@dlr119443) nach der Nutzung der jeweiligen KI-Anwendung erfasst. Die Erhebung erfolgte über eine visuelle Analogskala im Bereich von 0 bis 200 Punkten. Das Vertrauen in das System wurde anhand eines Einzelitems auf einer 5-Punkte-Likert-Skala gemessen (1 = sehr geringes Vertrauen, 5 = sehr hohes Vertrauen) nach @Mandsen_Gregor.
+Zur quantitativen Auswertung der Studie wurden zwei abhängige Variablen betrachtet: die subjektive mentale Belastung sowie das Vertrauen in das verwendete KI-System. Die mentale Belastung wurde mithilfe der DLR-Workload-Skala (@dlr119443) nach der Nutzung der jeweiligen KI-Anwendung erfasst. Die Erhebung erfolgte über eine visuelle Analogskala im Bereich von 0 bis 200 Punkten. Das Vertrauen in das System wurde mittels der Human-Computer-Trust-Skala von @Mandsen_Gregor erfasst, welche mit das Vertrauen durch Einzelitems auf einer 5-Punkte-Likert-Skala misst (1 = sehr geringes Vertrauen, 5 = sehr hohes Vertrauen).
 
-@tbl-belastung zeigt die deskriptiven Statistiken beider Variablen. Die mentale Belastung weist bei *N* = 176 einen Mittelwert von *M* = 105.90 (SD = 22.63) auf, bei einem Wertebereich von 44.38 bis 178.13. Dies deutet auf eine mittlere bis leicht erhöhte Beanspruchung hin. Das Vertrauen in das KI-System lag im Mittel bei *M* = 3.35 (*SD* = 0.93) und spiegelt somit eine eher neutrale bis tendenziell positive Haltung gegenüber der KI-Anwendung wider. Zur differenzierten Betrachtung der mentalen Belastung nach Interaktionstyp wurde zusätzlich eine Gruppierung nach KI-Typ vorgenommen (evaluativ vs. empfehlend). Dies wurde in @tbl-belastung zusammengefasst.
+@tbl-belastung-vertrauen zeigt die deskriptiven Statistiken beider Variablen. Die mentale Belastung weist bei *N* = 176 einen Mittelwert von *M* = 105.9 (SD = 22.6) auf, bei einem Wertebereich von 44.38 bis 178.13. Dies deutet auf eine mittlere bis leicht erhöhte Beanspruchung hin. Das Vertrauen in das KI-System lag im Mittel bei *M* = 3.4 (*SD* = 0.9) und spiegelt somit eine eher neutrale bis tendenziell positive Haltung gegenüber der KI-Anwendung wider. Zur differenzierten Betrachtung der mentalen Belastung nach Interaktionstyp wurde zusätzlich eine Gruppierung nach KI-Typ vorgenommen (evaluativ vs. empfehlend). Dies wurde in @tbl-belastung zusammengefasst.
 
 ```{r}
 #| label: setup
@@ -182,12 +170,16 @@ desc_stats_grouped <- data_grouped %>%
     Maximum = max(DLR_KI, na.rm = TRUE),
     .groups = "drop"
   )
+```
 
+```{r}
 #| label: tbl-belastung
 #| tbl-cap: "Deskriptive Statistik der mentalen Belastung"
+#| echo: false
+#| message: false
+#| warning: false
 # Tabelle anzeigen
 kable(desc_stats_grouped,
-      caption = "Deskriptive Statistik der mentalen Belastung nach KI-Typ",
       booktabs = TRUE, digits = 2) %>%
   kable_styling()
 
@@ -197,7 +189,6 @@ kable(desc_stats_grouped,
 #| echo: false
 #| message: false
 #| warning: false
-
 # Pakete laden
 library(psych)
 library(knitr)
@@ -225,27 +216,30 @@ summary_table <- data.frame(
   Standardabweichung = c(sd(data$DLR_KI, na.rm = TRUE), sd(data$Trust, na.rm = TRUE)),
   Minimum = c(min(data$DLR_KI, na.rm = TRUE), min(data$Trust, na.rm = TRUE)),
   Maximum = c(max(data$DLR_KI, na.rm = TRUE), max(data$Trust, na.rm = TRUE)),
-  Cronbachs_Alpha  = c(round(alpha_ki, 3),"-")
+  Cronbachs_Alpha  = c(round(alpha_ki, 2),"-")
 )
+```
 
+```{r}
 #| label: tbl-belastung-vertrauen
 #| tbl-cap: "Deskriptive Statistik für mentale Belastung und Vertrauen"
+#| echo: false
+#| message: false
+#| warning: false
 
 # Tabelle 
-kable(summary_table, caption = "Deskriptive Statistik für mentale Belastung und Vertrauen", digits = 3)
+kable(summary_table, digits = 2)
 
 ```
 
 #### Inferenzstatistik
 
-Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „Empfehlend“ (*M* = 104.85, *SD* = 20.31) und der Bedingung „Evaluativ“ (*M* = 106.97, *SD* = 20.87), *t*(173.63) = -0,62, *p* = .536 und *d* = 0.09. Die Effektstärke entspricht nach Cohen (1988) keinem Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot @fig-belastung-plot veranschaulicht.
+Die durchschnittliche mentale Belastung unterschied sich nicht signifikant zwischen Teilnehmenden in der Bedingung „empfehlend“ (*M* = 104.9, *SD* = 20.3) und der Bedingung „evaluativ“ (*M* = 107.0, *SD* = 20.9), *t*(173.63) = -0.62, *p* = .536 und *d* = 0.09. Die Effektstärke entspricht nach Cohen (1988) keinem Effekt. Dies deutet darauf hin, dass es keinen bedeutsamen Unterschied in der empfundenen mentalen Belastung zwischen den beiden KI-Typen gibt. Dies ist im Dot-and-Whisker-Plot @fig-belastung-plot veranschaulicht.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
-
-
 # Unabhängiger t-Test (Welch-Test) für mentale Belastung
 t_test_result <- t.test(DLR_KI ~ group,
                         data = data_grouped,
@@ -263,24 +257,24 @@ plot_data <- data_grouped %>%
     ci_upper = mean + qt(0.975, df = n - 1) * se,
     .groups = "drop"
   )
+```
 
+```{r}
 #| label: fig-belastung-plot
 #| fig-cap: "Mentale Belastung nach KI-Typ"
+#| echo: false
+#| message: false
+#| warning: false
 
 # Dot-and-Whisker-Plot 
 ggplot(plot_data, aes(x = group, y = mean)) +
   geom_point(size = 4, color = "#2C3E50") +
   geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.1, color = "#2C3E50") + scale_y_continuous(limits = c(95, 115)) +
   labs(
-    title = "Abbildung: Mentale Belastung nach KI-Typ",
     x = "KI-Typ",
     y = "Mentale Belastung (0–200)"
   ) +
   theme_minimal(base_size = 14)
-
-#| echo: false
-#| message: false
-#| warning: false
 
 ```
 
@@ -291,21 +285,26 @@ Zudem wurde eine Korrelationsanalyse nach Pearson durchgeführt, um den Zusammen
 #| message: false
 #| warning: false
 
+# Korrelations-Test
+cor_test <- cor.test(data$DLR_KI, data$Trust, method = "pearson")
+```
+
+```{r}
 #| label: fig-korrelation-belastung-vertrauen
 #| fig-cap: "Zusammenhang: mentaler Belastung und Vertrauen"
+#| echo: false
+#| message: false
+#| warning: false
+
 # Scatter-Plot
 ggplot(data, aes(x = DLR_KI, y = Trust)) +
   geom_jitter(width = 0.2, height = 0.2, color = "#0072B2", alpha = 0.6, size = 2) +
   geom_smooth(method = "lm", se = FALSE, color = "#D55E00") +
   labs(
-    title = "Zusammenhang: mentale Belastung (DLR) und Vertrauen",
     x = "Mentale Belastung (DLR-Skala, mit KI)",
     y = "Vertrauen in das KI-System"
   ) +
   theme_minimal(base_size = 14)
-
-# Korrelations-Test
-cor_test <- cor.test(data$DLR_KI, data$Trust, method = "pearson")
 ```
 
 Zusammenfassend lässt sich festhalten, dass sich die beiden getesteten KI-Systeme in ihrer Auswirkung auf die mentale Belastung nicht signifikant voneinander unterschieden. Beide Varianten führten zu vergleichbaren Belastungswerten, was darauf hinweist, dass der eingesetzte KI-Typ – evaluativ oder empfehlend – keinen entscheidenden Einfluss auf das subjektive Belastungsempfinden hatte. Zudem ergab die Korrelationsanalyse zwischen der empfundenen mentalen Belastung und dem Vertrauen in das System keinen signifikanten Zusammenhang. Teilnehmende, die das System als stärker belastend wahrnahmen, berichteten zwar tendenziell ein geringeres Vertrauen in die KI, diese Beziehung war jedoch statistisch nicht belastbar. Diese Ergebnisse sind insbesondere für die nutzerzentrierte Gestaltung von KI-Anwendungen bedeutsam, da sie nahelegen, dass eine wahrgenommene kognitive Entlastung potenziell das Vertrauen der Nutzenden in ein KI-System fördern kann, auch wenn dies in der vorliegenden Stichprobe nicht eindeutig bestätigt wurde.
