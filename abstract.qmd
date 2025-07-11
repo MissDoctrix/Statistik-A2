@@ -15,6 +15,8 @@ format:
     fig-numbering: true
     tbl-numbering: true
     code-fold: true
+    pdf-engine: xelatex
+    
   html:
     fontsize: 12pt
     number-sections: true
@@ -27,7 +29,7 @@ csl: apa7.csl
 ---
 
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
-**Für die Abgabe aktueller GitHub Hash:** 2b414e8d0478ee4c6328d2f6641749a22a015246
+**Für die Abgabe aktueller GitHub Hash:** 031d1e074b173008172aee85b2bbc1e6597ab7d1
 
 ## Einleitung
 
@@ -171,9 +173,9 @@ desc_stats_grouped <- data_grouped %>%
 #| message: false
 #| warning: false
 # Tabelle anzeigen
-kable(desc_stats_grouped,
-      booktabs = TRUE, digits = 2) %>%
-  kable_styling()
+
+knitr::kable(desc_stats_grouped, digits = 2, format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = "scale_down")
 
 ```
 
@@ -219,8 +221,11 @@ summary_table <- data.frame(
 #| message: false
 #| warning: false
 
-# Tabelle 
-kable(summary_table, digits = 2)
+
+library(kableExtra)
+
+knitr::kable(summary_table, digits = 2, format = "latex", booktabs = TRUE) %>%
+  kable_styling(latex_options = "scale_down")
 
 ```
 
@@ -324,7 +329,6 @@ Wir verpflichten uns der Einhaltung wissenschaftlicher Standards, mit besonderer
 ## Literaturverzeichnis {.unnumbered}
 
 ::: {#refs}
-
 :::
 
 ## Anhang 1 - Rekrutierungstext {.unnumbered}
