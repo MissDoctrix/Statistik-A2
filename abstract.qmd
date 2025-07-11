@@ -29,7 +29,7 @@ csl: apa7.csl
 ---
 
 **GitHub Repository:** <https://github.com/MissDoctrix/Statistik-A2.git>\
-**Für die Abgabe aktueller GitHub Hash:** 031d1e074b173008172aee85b2bbc1e6597ab7d1
+**Für die Abgabe aktueller GitHub Hash:** 2de3a107bdf49cfd5fdf560c179e3c82e88e864e
 
 ## Einleitung
 
@@ -79,7 +79,7 @@ Die Studie folgte einem mixed factorial design, mit between-subjects-Faktoren al
 
 ------------------------------------------------------------------------
 
-![Ablauf der quantitativen Studie](images/Untitled.png){#fig-ablauf-studie}
+![Ablauf der qualitativen Studie](images/Untitled.png){#fig-ablauf-studie}
 
 Die Datenerhebung bestand aus insgesamt fünf Abschnitten (wie in @fig-ablauf-studie vollständig dargestellt): einem Pre-Test, einer Baseline-Phase, einem Post-Baseline-Fragebogen, dem Test der Anwendung und einem abschleißenden Post-Test-Fragebogen. Im Pre-Test wurden grundlegende demografische Daten erfasst, darunter das Alter der Teilnehmenden (metrisch), das Geschlecht (nominalskaliert: männlich, weiblich, divers) sowie der Bildungsstand (ordinalskaliert mit mehreren Bildungsstufen). Zusätzlich wurden Angaben zur Technikaffinität (metrisch), zur Nutzung von Social Media (teils ordinal und teils nominal) sowie zum Vorwissen über KI (metrisch) erfasst. Im Hauptteil der Studie mussten die Teilnehmenden 20 Social-Media-Beiträge bewerten, die potentiell Falschinformationen enthielten. Die Beiträge waren in zwei Phasen aufgeteilt: In der ersten Phase (Baseline) wurden zehn Beiträge ohne Unterstützung durch ein KI-System bewertet. In der zweiten Phase (Test der Anwendung) erfolgte die Bewertung von zehn weiteren Beiträgen, hier mit Unterstützung durch eines von zwei KI-Systemen: entweder ein evaluatives System, das eine eigene Einschätzung abgibt, oder ein empfehlendes System, das eine Handlungsempfehlung formuliert. Die Zuordnung der KI-Systeme erfolgte zwischen den Teilnehmenden randomisiert. Zu jedem Beitrag sollten die Teilnehmenden einschätzen, ob es sich um Falschinformationen handelt (ja/nein). Diese Einschätzung wurde binär erfasst (nominalskaliert). Parallel wurde erfasst, unter welcher Systembedingung der jeweilige Beitrag präsentiert wurde: entweder ohne Assistenz (Baseline), mit einer evaluativen Entscheidungshilfe oder mit einer direkten Empfehlung. Nach jeder der beiden Bewertungsphasenwurde ein Post-Test durchgeführt, in dem die subjektiv empfundene mentale Belastung abgefragt wurde. Dafür kam hier eine Skala zum Einsatz, die sich an der DLR-Workload-Skala orientiert. Diese Skala misst fünf Bereiche der mentalen Beanspruchung: Informationsaufnahme, Wissensabruf, Entscheidungsfindung, motorische Beanspruchung und zeitlicher Druck. Jeder Bereich wurde einzeln auf einer visuellen Analogskala von 0 (sehr stark unterbeansprucht) bis 200 (sehr stark überbeansprucht) bewertet, wobei 100 als optimaler Wert gilt. Die Teilnehmenden konnten somit sehr differenziert angeben, wie belastend sie die Aufgaben empfanden. Die DLR-Skala gilt als ökonomisch, da sie trotz weniger Fragen eine differenzierte Erfassung ermöglicht. Die binäre Entscheidung bei den Beiträgen (ja/nein) ist angemessen für unser Ziel, um herauszufinden, wie sicher und richtig Teilnehmende Falschinformationen erkennen. Insgesamt liefert der Studiendesign sowohl objektive Daten (Entscheidung pro Beitrag), als auch subjektive Einschätzungen (über die Belastung). Damit lässt sich analysieren, ob und wie die KI-Systeme einen Einfluss auf das Erkennen von Misinformation haben.
 
